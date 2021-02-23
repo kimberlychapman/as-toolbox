@@ -144,9 +144,42 @@
 <div id="i-feel">I feel...</div>
 <div id="emotion">
     <div id="emotion-inner">
-        <div id="emotion-text">Emotion</div>
+        <img id="mood" src="images/happy.png">
+        <div id="emotion-text">Happy</div>
     </div>
 </div>
+
+<div id="emotion2">
+    <div id="emotion-inner">
+        <img id="mood2" src="images/sad.png">
+        <div id="emotion-text2">Sad</div>
+    </div>
+</div>
+<div id="emotion3">
+    <div id="emotion-inner">
+        <img id="mood3" src="images/angry.png">
+        <div id="emotion-text3">Mad</div>
+    </div>
+</div>
+<div id="emotion4">
+    <div id="emotion-inner">
+        <img id="mood4" src="images/better.png">
+        <div id="emotion-text4">Better</div>
+    </div>
+</div>
+<div id="emotion5">
+    <div id="emotion-inner">
+        <img id="mood5" src="images/confused.png">
+        <div id="emotion-text5">Confused</div>
+    </div>
+</div>
+<div id="emotion6">
+    <div id="emotion-inner">
+        <img id="mood6" src="images/tired.png">
+        <div id="emotion-text6">Tired</div>
+    </div>
+</div>
+
 <script>
     function feelingsTitle(){
         document.getElementById('i-feel').style.display="block";
@@ -160,11 +193,21 @@
 <script>
     function showEmotion(){
         document.getElementById('emotion').style.display="flex";
+        document.getElementById('emotion2').style.display="flex";
+        document.getElementById('emotion3').style.display="flex";
+        document.getElementById('emotion4').style.display="flex";
+        document.getElementById('emotion5').style.display="flex";
+        document.getElementById('emotion6').style.display="flex";
     }
 </script>
 <script>
     function hideEmotion(){
         document.getElementById('emotion').style.display="none";
+        document.getElementById('emotion2').style.display="none";
+        document.getElementById('emotion3').style.display="none";
+        document.getElementById('emotion4').style.display="none";
+        document.getElementById('emotion5').style.display="none";
+        document.getElementById('emotion6').style.display="none";
     }
 </script>
 <section id="home" class="p-0 dark-slider single-slide">
