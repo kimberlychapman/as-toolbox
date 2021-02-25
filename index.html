@@ -141,12 +141,12 @@
 <div id="feelings" onmouseover="feelingsTitle()" onmouseout="noMoreTitle()" onclick="showEmotion()" ondblclick="hideEmotion()">
     <img id="feelings-btn" src="images/button.png">
 </div>
-<div id="i-feel">I feel...</div>
+<div id="i-feel">My Feelings</div>
 
 <div id="body-needs" onmouseover="bodyTitle()" onmouseout="noBodyTitle()" onclick=showBody() ondblclick="hideBody()">
     <img id="body-btn" src="images/button.png">
 </div>
-<div id="body-feels">How my body feels</div>
+<div id="body-feels">My Body</div>
 
 
 <div id="emotion">
@@ -199,6 +199,42 @@
         <div id="need-text2">Head hurts</div>
     </div>
 </div>
+<div id="i-need3" onclick="showSick()" ondblclick="hideSick()">
+    <div id="need3-inner">
+        <img id="need3" src="images/sick.png">
+        <div id="need-text3">Feel sick</div>
+    </div>
+</div>
+<div id="sick1">
+    <div id="sick1-inner"></div>
+        <img id="sick-1" src="images/cough.png">
+        <div id="sick-text1">Cold</div>
+    </div>
+</div>
+<div id="sick2">
+    <div id="sick1-inner"></div>
+        <img id="sick-2" src="images/nauseated.png">
+        <div id="sick-text2">Throw up</div>
+    </div>
+</div>
+<div id="sick3">
+    <div id="sick3-inner"></div>
+        <img id="sick-3" src="images/freezing.png">
+        <div id="sick-text3">Freezing</div>
+    </div>
+</div>
+<div id="sick4">
+    <div id="sick4-inner"></div>
+        <img id="sick-4" src="images/hot.png">
+        <div id="sick-text4">Hot</div>
+    </div>
+</div>
+<div id="sick5">
+    <div id="sick5-inner"></div>
+        <img id="sick-5" src="images/throat.png">
+        <div id="sick-text5">Sore throat</div>
+    </div>
+</div>
 <script>
     function feelingsTitle(){
         document.getElementById('i-feel').style.display="block";
@@ -219,6 +255,7 @@
         document.getElementById('body-feels').style.display="none";
     }
 </script>
+
 <script>
     function showEmotion(){
         document.getElementById('emotion').style.display="flex";
@@ -243,12 +280,39 @@
     function showBody(){
         document.getElementById("i-need1").style.display="block";
         document.getElementById("i-need2").style.display="block";
+        document.getElementById("i-need3").style.display="block";
     }
 </script>
 <script>
     function hideBody(){
         document.getElementById("i-need1").style.display="none";
         document.getElementById("i-need2").style.display="none";
+        document.getElementById("i-need3").style.display="none";
+        document.getElementById("sick1").style.display="none";
+        document.getElementById("sick2").style.display="none";
+        document.getElementById("sick3").style.display="none";
+        document.getElementById("sick4").style.display="none";
+        document.getElementById("sick5").style.display="none";
+    }
+</script>
+<script>
+    function showSick(){
+        document.getElementById("sick1").style.display="block";
+        document.getElementById("sick2").style.display="block";
+        document.getElementById("sick3").style.display="block";
+        document.getElementById("sick4").style.display="block";
+        document.getElementById("sick5").style.display="block";
+        // document.getElementById("body-feels").style.display="none";
+    }
+</script>
+<script>
+    function hideSick(){
+        document.getElementById("sick1").style.display="none";
+        document.getElementById("sick2").style.display="none";
+        document.getElementById("sick3").style.display="none";
+        document.getElementById("sick4").style.display="none";
+        document.getElementById("sick5").style.display="none";
+        // document.getElementById("body-feels").style.color="black";
     }
 </script>
 <section id="home" class="p-0 dark-slider single-slide">
@@ -406,7 +470,7 @@
                          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                          data-start="1000" data-splitin="none" data-splitout="none">
                         <h2>Welcome to</h2>
-                        <img id="test" src="images/boy.png">
+                        <img id="test" src="images/ray-warrior.png" onclick="jacobiRecess()" ondblclick="jacobiClass()">
                     </div>
 
                     <div class="tp-caption tp-resizeme"
@@ -448,7 +512,16 @@
     <!-- END REVOLUTION SLIDER -->
     </div>
 
-
+<script>
+    function jacobiRecess(){
+        document.getElementById('test').src="images/boy.png";
+    }
+</script>
+<script>
+    function jacobiClass(){
+        document.getElementById('test').src="images/ray-warrior.png";
+    }
+</script>
  <!--scroll down-->
  <!-- <a href="#about" class="scroll-down scroll">Scroll Down <i class="fa fa-long-arrow-down"></i></a> -->
 
