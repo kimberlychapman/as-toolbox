@@ -142,6 +142,13 @@
     <img id="feelings-btn" src="images/button.png">
 </div>
 <div id="i-feel">I feel...</div>
+
+<div id="body-needs" onmouseover="bodyTitle()" onmouseout="noBodyTitle()" onclick=showBody() ondblclick="hideBody()">
+    <img id="body-btn" src="images/button.png">
+</div>
+<div id="body-feels">How my body feels</div>
+
+
 <div id="emotion">
     <div id="emotion-inner">
         <img id="mood" src="images/happy.png">
@@ -180,6 +187,18 @@
     </div>
 </div>
 
+<div id="i-need1">
+    <div id="need1-inner">
+        <img id="need1" src="images/asthma.png">
+        <div id="need-text1">Inhaler</div>
+    </div>
+</div>
+<div id="i-need2">
+    <div id="need2-inner">
+        <img id="need2" src="images/headache.png">
+        <div id="need-text2">Head hurts</div>
+    </div>
+</div>
 <script>
     function feelingsTitle(){
         document.getElementById('i-feel').style.display="block";
@@ -188,6 +207,16 @@
 <script>
     function noMoreTitle(){
         document.getElementById('i-feel').style.display="none";
+    }
+</script>
+<script>
+    function bodyTitle(){
+        document.getElementById('body-feels').style.display="block";
+    }
+</script>
+<script>
+    function noBodyTitle(){
+        document.getElementById('body-feels').style.display="none";
     }
 </script>
 <script>
@@ -208,6 +237,18 @@
         document.getElementById('emotion4').style.display="none";
         document.getElementById('emotion5').style.display="none";
         document.getElementById('emotion6').style.display="none";
+    }
+</script>
+<script>
+    function showBody(){
+        document.getElementById("i-need1").style.display="block";
+        document.getElementById("i-need2").style.display="block";
+    }
+</script>
+<script>
+    function hideBody(){
+        document.getElementById("i-need1").style.display="none";
+        document.getElementById("i-need2").style.display="none";
     }
 </script>
 <section id="home" class="p-0 dark-slider single-slide">
