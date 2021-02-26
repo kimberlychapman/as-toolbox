@@ -4664,13 +4664,13 @@ ul.count_down.white li p:nth-child(2) {
 
 #i-need1{
     position:absolute;
-    top:10%;
-    left:35%;
+    top:4%;
+    left:59.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
     align-items:center;
-    background:rgb(135, 206, 235,0.6);
+    background:rgb(255, 69, 0, 0.4);
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -4707,9 +4707,58 @@ ul.count_down.white li p:nth-child(2) {
     text-align:center;
     z-index:2;
 }
+#select-sick{
+    position:absolute;
+    top:42%;
+    left:56.5%;
+    display: none; 
+    background:transparent;
+    width: 210px;
+    height: 50px;
+    /* align-items:center; */
+    /* border:2px solid magenta; */
+    font-size:16pt;
+    color:black;
+    text-align:center;
+    /* margin-top:-5%; */
+    z-index: 3;
+    /* font-weight: bold; */
+}
+#i-need4{
+    position:absolute;
+    top:4%;
+    left:68%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background: rgb(51, 51, 255,0.4);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+}
+#i-need5{
+    position:absolute;
+    top:4%;
+    left:76.5%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background: rgb(135, 206, 250, 0.4);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+}
 #need1,
 #need2,
-#need3{
+#need3,
+#need4,
+#need5{
     height:80px;
     width:90px;
     border-radius: 50%;
@@ -4720,7 +4769,9 @@ ul.count_down.white li p:nth-child(2) {
 
 #need-text1,
 #need-text2,
-#need-text3{
+#need-text3,
+#need-text4,
+#need-text5{
     background:transparent;
     width: 110px;
     height: 30px;
@@ -4736,6 +4787,9 @@ ul.count_down.white li p:nth-child(2) {
     /* margin-left:25px; */
     /* border-radius: 50%; */
 }
+/* #need-text4{
+    margin-left:12%;
+} */
 #need-text2,
 #sick-text1{
     background:transparent;
@@ -4753,8 +4807,24 @@ ul.count_down.white li p:nth-child(2) {
     /* margin-left:25px; */
     /* border-radius: 50%; */
 }
+#need-text5{
+    background:transparent;
+    width: 110px;
+    height: 30px;
+    align-items:center;
+    /* border:2px solid magenta; */
+    font-size:16pt;
+    color:black;
+    text-align:center;
+    margin-top:-5%;
+    z-index: 3;
+    font-weight: bold;
+    margin-left:2%;
+    /* margin-left:25px; */
+    /* border-radius: 50%; */
+}
 #need1-inner{
-    background: rgb(135, 206, 250, 0.8);
+    background:rgb(255, 69, 0, 0.8);
     width: 110px;
     height: 110px;
     border-radius: 50%;
@@ -4771,6 +4841,22 @@ ul.count_down.white li p:nth-child(2) {
 }
 #need3-inner{
     background: rgb(0, 230, 115,0.8);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-top:10%;
+    margin-left:10%;
+}
+#need4-inner{
+    background:rgb(51, 51, 255, 0.7); 
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-top:10%;
+    margin-left:10%;
+}
+#need5-inner{
+    background: rgb(135, 206, 250, 0.8);
     width: 110px;
     height: 110px;
     border-radius: 50%;
@@ -4813,7 +4899,14 @@ ul.count_down.white li p:nth-child(2) {
     /* border:solid 2px yellow; */
     /* justify-content: center; */
 }
-
+#sick-6{
+    height:60px;
+    width:75px;
+    border-radius: 50%;
+    margin-top:5%;
+    /* border:solid 2px yellow; */
+    /* justify-content: center; */
+}
 #sick-text1,
 #sick-text4{
     background:transparent;
@@ -4868,7 +4961,8 @@ ul.count_down.white li p:nth-child(2) {
     /* margin-left:25px; */
     /* border-radius: 50%; */
 }
-#sick-text5{
+#sick-text5,
+#sick-text6{
     background:transparent;
     width: 110px;
     height: 30px;
@@ -4885,6 +4979,10 @@ ul.count_down.white li p:nth-child(2) {
     /* margin-left:2%; */
     /* margin-left:25px; */
     /* border-radius: 50%; */
+}
+#sick-text6{
+    margin-top:-10%;
+    font-size:10.5pt;
 }
 #sick3{
     position:absolute;
@@ -4930,6 +5028,23 @@ ul.count_down.white li p:nth-child(2) {
     justify-content:center;
     align-items:center;
     background:rgb(255, 0, 0,0.85);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#sick6{
+    position:absolute;
+    top:38.5%;
+    left:81.5%;
+    /* left:75%; */
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background: #fff599;
     width: 100px;
     height: 100px;
     border-radius: 50%;

@@ -193,16 +193,29 @@
         <div id="need-text1">Inhaler</div>
     </div>
 </div>
-<div id="i-need2">
+<!-- <div id="i-need2">
     <div id="need2-inner">
         <img id="need2" src="images/headache.png">
         <div id="need-text2">Head hurts</div>
     </div>
-</div>
-<div id="i-need3" onclick="showSick()" ondblclick="hideSick()">
+</div> -->
+<div id="i-need3" onclick="showSick()" ondblclick="hideSick()" onmouseover="showSelect()" onmouseout="hideSelect()">
     <div id="need3-inner">
         <img id="need3" src="images/sick.png">
         <div id="need-text3">Feel sick</div>
+    </div>
+</div>
+<div id="select-sick">Click the <span style="color:green;font-weight: bold;">green button</span> to show what's making you feel sick.</div>
+<div id="i-need4" onclick="showSick()" ondblclick="hideSick()">
+    <div id="need4-inner">
+        <img id="need4" src="images/drinking_fountain.png">
+        <div id="need-text4">Thirsty</div>
+    </div>
+</div>
+<div id="i-need5" onclick="showSick()" ondblclick="hideSick()">
+    <div id="need5-inner">
+        <img id="need-5" src="images/bathroom.png">
+        <div id="need-text5">Bathroom</div>
     </div>
 </div>
 <div id="sick1">
@@ -233,6 +246,12 @@
     <div id="sick5-inner"></div>
         <img id="sick-5" src="images/throat.png">
         <div id="sick-text5">Sore throat</div>
+    </div>
+</div>
+<div id="sick6">
+    <div id="sick5-inner"></div>
+        <img id="sick-6" src="images/tummy.png">
+        <div id="sick-text6">Tummy ache</div>
     </div>
 </div>
 <script>
@@ -279,20 +298,25 @@
 <script>
     function showBody(){
         document.getElementById("i-need1").style.display="block";
-        document.getElementById("i-need2").style.display="block";
+        // document.getElementById("i-need2").style.display="block";
         document.getElementById("i-need3").style.display="block";
+        document.getElementById("i-need4").style.display="block";
+        document.getElementById("i-need5").style.display="block";
     }
 </script>
 <script>
     function hideBody(){
         document.getElementById("i-need1").style.display="none";
-        document.getElementById("i-need2").style.display="none";
+        // document.getElementById("i-need2").style.display="none";
         document.getElementById("i-need3").style.display="none";
+        document.getElementById("i-need4").style.display="none";
+        document.getElementById("i-need5").style.display="none";
         document.getElementById("sick1").style.display="none";
         document.getElementById("sick2").style.display="none";
         document.getElementById("sick3").style.display="none";
         document.getElementById("sick4").style.display="none";
         document.getElementById("sick5").style.display="none";
+        document.getElementById("sick6").style.display="none";
     }
 </script>
 <script>
@@ -302,6 +326,7 @@
         document.getElementById("sick3").style.display="block";
         document.getElementById("sick4").style.display="block";
         document.getElementById("sick5").style.display="block";
+        document.getElementById("sick6").style.display="block";
         // document.getElementById("body-feels").style.display="none";
     }
 </script>
@@ -312,7 +337,18 @@
         document.getElementById("sick3").style.display="none";
         document.getElementById("sick4").style.display="none";
         document.getElementById("sick5").style.display="none";
+        document.getElementById("sick6").style.display="none";
         // document.getElementById("body-feels").style.color="black";
+    }
+</script>
+<script>
+    function showSelect(){
+        document.getElementById('select-sick').style.display="block";
+    }
+</script>
+<script>
+    function hideSelect(){
+        document.getElementById('select-sick').style.display="none";
     }
 </script>
 <section id="home" class="p-0 dark-slider single-slide">
