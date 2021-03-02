@@ -143,11 +143,6 @@
 </div>
 <div id="i-feel">My Feelings</div>
 
-<div id="body-needs" onmouseover="bodyTitle()" onmouseout="noBodyTitle()" onclick=showBody() ondblclick="hideBody()">
-    <img id="body-btn" src="images/button.png">
-</div>
-<div id="body-feels">My Body</div>
-
 
 <div id="emotion">
     <div id="emotion-inner">
@@ -187,6 +182,11 @@
     </div>
 </div>
 
+
+<div id="body-needs" onclick=showBody() ondblclick="hideBody()">
+    <img id="body-btn" src="images/button.png">
+</div>
+<div id="body-feels">My Body</div>
 <div id="i-need1">
     <div id="need1-inner">
         <img id="need1" src="images/asthma.png">
@@ -237,24 +237,63 @@
     </div>
 </div>
 <div id="sick4">
-    <div id="sick4-inner"></div>
+    <!-- <div id="sick4-inner"></div> -->
         <img id="sick-4" src="images/hot.png">
         <div id="sick-text4">Hot</div>
     </div>
 </div>
 <div id="sick5">
-    <div id="sick5-inner"></div>
+    <!-- <div id="sick5-inner"></div> -->
         <img id="sick-5" src="images/throat.png">
         <div id="sick-text5">Sore throat</div>
     </div>
 </div>
 <div id="sick6">
-    <div id="sick5-inner"></div>
+    <!-- <div id="sick5-inner"></div> -->
         <img id="sick-6" src="images/tummy.png">
         <div id="sick-text6">Tummy ache</div>
     </div>
 </div>
-<script>
+<div id="hurts" onmouseover="showWhatHurts()" onmouseout="hideWhatHurts()" onclick="thisHurts()" ondblclick="notHurt()">
+    <div id="hurts-inner">
+        <img id="hurts1" src="images/body_hurts.png">
+        <div id="hurts-text">I'm hurt</div>
+    </div>
+</div>
+<div id="what-hurts">Click on the <span style="color:hotpink; font-weight: bold;">pink button</span> to show what hurts.</div>
+<div id="head-hurts">
+    <img id="head-hurting" src="images/headache.png">
+    <div id="head-text">Head</div>
+</div>
+<div id="neck-hurts">
+    <img id="neck-hurting" src="images/neck.png">
+    <div id="neck-text">Neck</div>
+</div>
+<div id="back-hurts">
+    <img id="back-hurting" src="images/back_hurts.png">
+    <div id="back-text">Back</div>
+</div>
+<div id="tummy-hurts">
+    <img id="tummy-hurting" src="images/tummy.png">
+    <div id="tummy-text">Tummy</div>
+</div>
+<div id="arm-hurts">
+    <img id="arm-hurting" src="images/arm.png">
+    <div id="arm-text">Arm</div>
+</div>
+<div id="leg-hurts">
+    <img id="leg-hurting" src="images/leg_hurts.png">
+    <div id="leg-text">Leg</div>
+</div>
+<div id="hand-hurts">
+    <img id="hand-hurting" src="images/hand_hurts.png">
+    <div id="hand-text">Hand</div>
+</div>
+<div id="foot-hurts">
+    <img id="foot-hurting" src="images/foot_hurts.png">
+    <div id="foot-text">Foot</div>
+</div>
+<!-- <script>
     function feelingsTitle(){
         document.getElementById('i-feel').style.display="block";
     }
@@ -263,7 +302,7 @@
     function noMoreTitle(){
         document.getElementById('i-feel').style.display="none";
     }
-</script>
+</script> -->
 <script>
     function bodyTitle(){
         document.getElementById('body-feels').style.display="block";
@@ -283,6 +322,25 @@
         document.getElementById('emotion4').style.display="flex";
         document.getElementById('emotion5').style.display="flex";
         document.getElementById('emotion6').style.display="flex";
+        document.getElementById("i-need1").style.display="none";
+        document.getElementById("i-need3").style.display="none";
+        document.getElementById("i-need4").style.display="none";
+        document.getElementById("i-need5").style.display="none";
+        document.getElementById("sick1").style.display="none";
+        document.getElementById("sick2").style.display="none";
+        document.getElementById("sick3").style.display="none";
+        document.getElementById("sick4").style.display="none";
+        document.getElementById("sick5").style.display="none";
+        document.getElementById("sick6").style.display="none";
+        document.getElementById("hurts").style.display="none";
+        document.getElementById('head-hurts').style.display="none";
+        document.getElementById('neck-hurts').style.display="none";
+        document.getElementById('back-hurts').style.display="none";
+        document.getElementById('tummy-hurts').style.display="none";
+        document.getElementById('arm-hurts').style.display="none";
+        document.getElementById('leg-hurts').style.display="none";
+        document.getElementById('hand-hurts').style.display="none";
+        document.getElementById('foot-hurts').style.display="none";
     }
 </script>
 <script>
@@ -302,6 +360,13 @@
         document.getElementById("i-need3").style.display="block";
         document.getElementById("i-need4").style.display="block";
         document.getElementById("i-need5").style.display="block";
+        document.getElementById('emotion').style.display="none";
+        document.getElementById('emotion2').style.display="none";
+        document.getElementById('emotion3').style.display="none";
+        document.getElementById('emotion4').style.display="none";
+        document.getElementById('emotion5').style.display="none";
+        document.getElementById('emotion6').style.display="none";
+        document.getElementById("hurts").style.display="block";
     }
 </script>
 <script>
@@ -317,6 +382,15 @@
         document.getElementById("sick4").style.display="none";
         document.getElementById("sick5").style.display="none";
         document.getElementById("sick6").style.display="none";
+        document.getElementById("hurts").style.display="none";
+        document.getElementById('head-hurts').style.display="none";
+        document.getElementById('neck-hurts').style.display="none";
+        document.getElementById('back-hurts').style.display="none";
+        document.getElementById('tummy-hurts').style.display="none";
+        document.getElementById('arm-hurts').style.display="none";
+        document.getElementById('leg-hurts').style.display="none";
+        document.getElementById('hand-hurts').style.display="none";
+        document.getElementById('foot-hurts').style.display="none";
     }
 </script>
 <script>
@@ -327,6 +401,14 @@
         document.getElementById("sick4").style.display="block";
         document.getElementById("sick5").style.display="block";
         document.getElementById("sick6").style.display="block";
+        document.getElementById('head-hurts').style.display="none";
+        document.getElementById('neck-hurts').style.display="none";
+        document.getElementById('back-hurts').style.display="none";
+        document.getElementById('tummy-hurts').style.display="none";
+        document.getElementById('arm-hurts').style.display="none";
+        document.getElementById('leg-hurts').style.display="none";
+        document.getElementById('hand-hurts').style.display="none";
+        document.getElementById('foot-hurts').style.display="none";
         // document.getElementById("body-feels").style.display="none";
     }
 </script>
@@ -341,14 +423,56 @@
         // document.getElementById("body-feels").style.color="black";
     }
 </script>
-<script>
+<!-- <script>
     function showSelect(){
         document.getElementById('select-sick').style.display="block";
+
     }
 </script>
 <script>
     function hideSelect(){
         document.getElementById('select-sick').style.display="none";
+
+    }
+</script> -->
+<!-- <script>
+    function showWhatHurts(){
+        document.getElementById('what-hurts').style.display="block";
+    }
+</script>
+<script>
+    function hideWhatHurts(){
+        document.getElementById('what-hurts').style.display="none";
+    }
+</script> -->
+<script>
+    function thisHurts(){
+        document.getElementById('head-hurts').style.display="block";
+        document.getElementById('neck-hurts').style.display="block";
+        document.getElementById('back-hurts').style.display="block";
+        document.getElementById('tummy-hurts').style.display="block";
+        document.getElementById('arm-hurts').style.display="block";
+        document.getElementById('leg-hurts').style.display="block";
+        document.getElementById('hand-hurts').style.display="block";
+        document.getElementById('foot-hurts').style.display="block";
+        document.getElementById("sick1").style.display="none";
+        document.getElementById("sick2").style.display="none";
+        document.getElementById("sick3").style.display="none";
+        document.getElementById("sick4").style.display="none";
+        document.getElementById("sick5").style.display="none";
+        document.getElementById("sick6").style.display="none";
+    }
+</script>
+<script>
+    function notHurt(){
+        document.getElementById('head-hurts').style.display="none";
+        document.getElementById('neck-hurts').style.display="none";
+        document.getElementById('back-hurts').style.display="none";
+        document.getElementById('tummy-hurts').style.display="none";
+        document.getElementById('arm-hurts').style.display="none";
+        document.getElementById('leg-hurts').style.display="none";
+        document.getElementById('hand-hurts').style.display="none";
+        document.getElementById('foot-hurts').style.display="none";
     }
 </script>
 <section id="home" class="p-0 dark-slider single-slide">

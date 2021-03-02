@@ -4347,7 +4347,7 @@ ul.count_down.white li p:nth-child(2) {
 }
 #feelings{
     position:absolute;
-    top:12.5%;
+    top:10.75%;
     left:53.5%;
     z-index: 1;
     height:35px;
@@ -4363,9 +4363,9 @@ ul.count_down.white li p:nth-child(2) {
     /* border:2px solid magenta; */
 }
 #i-feel{
-    display:none;
+    /* display:none; */
     position:absolute;
-    top:12.5%;
+    top:10.75%;
     left:55.5%;
     z-index: 2;
     font-family: 'Roboto', sans-serif;
@@ -4378,8 +4378,8 @@ ul.count_down.white li p:nth-child(2) {
 }
 #body-needs{
     position:absolute;
-    top:29%;
-    left:57.5%;
+    top:30.25%;
+    left:58.25%;
     z-index: 1;
     height:35px;
     width:35px;
@@ -4389,14 +4389,15 @@ ul.count_down.white li p:nth-child(2) {
 }
 
 #body-feels{
-    display:none;
+    /* display:none; */
     position:absolute;
-    top:32%;
-    left:58%;
+    top:30.25%;
+    left:60%;
     height:30px;
-    width:170px; 
+    width:100px; 
     z-index: 2;
     font-family: 'Roboto', sans-serif;
+    /* border:solid 2px black; */
     font-size:16pt;
     color: black;
     text-align: center;
@@ -4406,7 +4407,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion{
     position:absolute;
     top:5%;
-    left:60%;
+    left:67%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4449,7 +4450,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion2{
     position:absolute;
     top:5%;
-    left:71%;
+    left:76%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4492,7 +4493,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion3{
     position:absolute;
     top:22.5%;
-    left:60%;
+    left:67%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4535,7 +4536,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion4{
     position:absolute;
     top:22.5%;
-    left:71%;
+    left:76%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4578,7 +4579,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion5{
     position:absolute;
     top:40%;
-    left:60%;
+    left:67%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4621,7 +4622,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion6{
     position:absolute;
     top:40%;
-    left:71%;
+    left:76%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4664,7 +4665,7 @@ ul.count_down.white li p:nth-child(2) {
 
 #i-need1{
     position:absolute;
-    top:4%;
+    top:13%;
     left:59.5%;
     display: none;
     /* display:flex; */
@@ -4694,8 +4695,8 @@ ul.count_down.white li p:nth-child(2) {
 }
 #i-need3{
     position:absolute;
-    top:22%;
-    left:59.5%;
+    top:36.75%;
+    left:58%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4709,8 +4710,8 @@ ul.count_down.white li p:nth-child(2) {
 }
 #select-sick{
     position:absolute;
-    top:42%;
-    left:56.5%;
+    top:41.25%;
+    left:65.75%;
     display: none; 
     background:transparent;
     width: 210px;
@@ -4726,7 +4727,7 @@ ul.count_down.white li p:nth-child(2) {
 }
 #i-need4{
     position:absolute;
-    top:4%;
+    top:13%;
     left:68%;
     display: none;
     /* display:flex; */
@@ -4741,7 +4742,7 @@ ul.count_down.white li p:nth-child(2) {
 }
 #i-need5{
     position:absolute;
-    top:4%;
+    top:13%;
     left:76.5%;
     display: none;
     /* display:flex; */
@@ -4753,6 +4754,70 @@ ul.count_down.white li p:nth-child(2) {
     border-radius: 50%;
     text-align:center;
     z-index:2;
+}
+#hurts{
+    position:absolute;
+    top:55%;
+    left:56%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background:rgb(255, 105, 180,0.4);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+}
+#hurts-inner{
+    background:rgb(255, 105, 180,0.8);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-top:10%;
+    margin-left:10%;
+}
+#hurts-text{
+    background:transparent;
+    width: 110px;
+    height: 30px;
+    align-items:center;
+    /* border:2px solid magenta; */
+    font-size:16pt;
+    color:black;
+    text-align:center;
+    margin-top:-8.5%;
+    z-index: 3;
+    font-weight: bold;
+    margin-left:2%;
+    /* margin-left:25px; */
+    /* border-radius: 50%; */
+}
+#hurts1{
+    height:80px;
+    width:90px;
+    border-radius: 50%;
+    margin-top:7%;
+    /* border:solid 2px yellow; */
+    /* justify-content: center; */
+}
+#what-hurts{
+    position:absolute;
+    top:59.75%;
+    left:64%;
+    display: none; 
+    background:transparent;
+    width: 210px;
+    height: 50px;
+    /* align-items:center; */
+    /* border:2px solid magenta; */
+    font-size:16pt;
+    color:black;
+    text-align:center;
+    /* margin-top:-5%; */
+    z-index: 3;
+    /* font-weight: bold; */
 }
 #need1,
 #need2,
@@ -4865,8 +4930,8 @@ ul.count_down.white li p:nth-child(2) {
 }
 #sick1{
     position:absolute;
-    top:25.75%;
-    left:68.5%;
+    top:33%;
+    left:77%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4878,6 +4943,14 @@ ul.count_down.white li p:nth-child(2) {
     text-align:center;
     z-index:2;
     border:solid 2px black;
+}
+#hurts-inner{
+    background:rgb(255, 105, 180,0.8);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-top:10%;
+    margin-left:10%;
 }
 #sick-1,
 #sick-2,
@@ -4928,8 +5001,8 @@ ul.count_down.white li p:nth-child(2) {
 }
 #sick2{
     position:absolute;
-    top:25.75%;
-    left:75%;
+    top:33%;
+    left:83.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4986,8 +5059,8 @@ ul.count_down.white li p:nth-child(2) {
 }
 #sick3{
     position:absolute;
-    top:25.75%;
-    left:81.5%;
+    top:33%;
+    left:90%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -5003,8 +5076,8 @@ ul.count_down.white li p:nth-child(2) {
 
 #sick4{
     position:absolute;
-    top:38.5%;
-    left:68.5%;
+    top:46%;
+    left:77%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -5020,9 +5093,8 @@ ul.count_down.white li p:nth-child(2) {
 
 #sick5{
     position:absolute;
-    top:38.5%;
-    left:68.5%;
-    left:75%;
+    top:46%;
+    left:83.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -5037,8 +5109,8 @@ ul.count_down.white li p:nth-child(2) {
 }
 #sick6{
     position:absolute;
-    top:38.5%;
-    left:81.5%;
+    top:46%;
+    left:90%;
     /* left:75%; */
     display: none;
     /* display:flex; */
@@ -5052,4 +5124,173 @@ ul.count_down.white li p:nth-child(2) {
     z-index:2;
     border:solid 2px black;
 }
+#head-hurts{
+    position:absolute;
+    top:72.75%;
+    left:56.25%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background: rgb(65, 105, 225,0.8);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#neck-hurts{
+    position:absolute;
+    top:72.75%;
+    left:61.75%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background: rgb(127, 255, 0, 0.8);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#back-hurts{
+    position:absolute;
+    top:72.75%;
+    left:67.25%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background:rgb(233, 22, 64, 0.8);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#tummy-hurts{
+    position:absolute;
+    top:72.75%;
+    left:72.75%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background: rgb(127, 255, 212, 0.8);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#arm-hurts{
+    position:absolute;
+    top:83.75%;
+    left:56.25%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background:rgb(255, 218, 185);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#leg-hurts{
+    position:absolute;
+    top:83.75%;
+    left:61.75%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background:rgb(255, 250, 205);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#hand-hurts{
+    position:absolute;
+    top:83.75%;
+    left:67.25%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background:rgb(148, 0, 211, 0.8);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#foot-hurts{
+    position:absolute;
+    top:83.75%;
+    left:72.75%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background:rgb(34, 139, 34, 0.8);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px black;
+}
+#head-hurting,
+#neck-hurting,
+#back-hurting,
+#tummy-hurting,
+#arm-hurting,
+#leg-hurting,
+#hand-hurting,
+#foot-hurting{
+    height:55px;
+    width:60px;
+    border-radius: 50%;
+    margin-top:7%;
+    /* border:solid 2px yellow; */
+    /* justify-content: center; */
+}
+#head-text,
+#neck-text,
+#back-text,
+#tummy-text,
+#arm-text,
+#leg-text,
+#hand-text,
+#foot-text{
+    background:transparent;
+    width: 110px;
+    height: 30px;
+    /* align-items:center; */
+    /* border:2px solid magenta; */
+    font-size:11pt;
+    color:black;
+    text-align:center;
+    /* margin-top:-5%; */
+    z-index: 3;
+    font-weight: bold;
+    margin-left:-15.5%;
+    margin-top:-7%;
+    /* margin-left:2%; */
+    /* margin-left:25px; */
+    /* border-radius: 50%; */
+}
+
 .brand {display: none !important}
