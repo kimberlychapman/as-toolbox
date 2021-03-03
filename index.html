@@ -138,9 +138,8 @@
 <!--Header end-->
 
 <!--slider-->
-<div id="feelings" onmouseover="feelingsTitle()" onmouseout="noMoreTitle()" onclick="showEmotion()" ondblclick="hideEmotion()">
-    <img id="feelings-btn" src="images/button.png">
-</div>
+<div id="choice">My Choice</div>
+<div id="button-1" onclick="showEmotion()" ondblclick="hideEmotion()"></div>
 <div id="i-feel">My Feelings</div>
 
 
@@ -183,9 +182,7 @@
 </div>
 
 
-<div id="body-needs" onclick=showBody() ondblclick="hideBody()">
-    <img id="body-btn" src="images/button.png">
-</div>
+<div id="button-2" onclick=showBody() ondblclick="hideBody()"></div>
 <div id="body-feels">My Body</div>
 <div id="i-need1">
     <div id="need1-inner">
@@ -294,10 +291,9 @@
     <div id="foot-text">Foot</div>
 </div>
 
-<div id="my-needs">
-    <img id="needs-btn" src="images/button.png">
-</div>
+<div id="button-3" onclick="showYourNeed()" ondblclick="hideYourNeed()"></div>
 <div id="i-need-my">I Need</div>
+<!-- <div class="button button-1">Neon</div> -->
 <!-- <ul id="placeholder">
     <li>Help</li>
     <li>Headphones</li>
@@ -350,6 +346,7 @@
         document.getElementById('emotion4').style.display="flex";
         document.getElementById('emotion5').style.display="flex";
         document.getElementById('emotion6').style.display="flex";
+        document.getElementById('i-feel').style.display="none";
         document.getElementById('body-feels').style.display="none";
         document.getElementById('i-need-my').style.display="none";
         document.getElementById("i-need1").style.display="none";
@@ -371,6 +368,8 @@
         document.getElementById('leg-hurts').style.display="none";
         document.getElementById('hand-hurts').style.display="none";
         document.getElementById('foot-hurts').style.display="none";
+        document.getElementById('choice').style.display="block";
+        document.getElementById('choice').innerHTML="My Feelings";
     }
 </script>
 <script>
@@ -383,6 +382,10 @@
         document.getElementById('emotion6').style.display="none";
         document.getElementById('body-feels').style.display="block";
         document.getElementById('i-need-my').style.display="block";
+        document.getElementById('i-feel').style.display="block";
+        document.getElementById('choice').style.display="none";
+        document.getElementById('choice').innerHTML="My Choice";
+
     }
 </script>
 <script>
@@ -401,6 +404,9 @@
         document.getElementById("hurts").style.display="block";
         document.getElementById('i-need-my').style.display="none";
         document.getElementById('i-feel').style.display="none";
+        document.getElementById('body-feels').style.display="none";
+        document.getElementById('choice').style.display="block";
+        document.getElementById('choice').innerHTML="My Body";
     }
 </script>
 <script>
@@ -427,6 +433,9 @@
         document.getElementById('foot-hurts').style.display="none";
         document.getElementById('i-need-my').style.display="block";
         document.getElementById('i-feel').style.display="block";
+        document.getElementById('body-feels').style.display="block";
+        document.getElementById('choice').style.display="none";
+        document.getElementById('choice').innerHTML="My Choice";
     }
 </script>
 <script>
@@ -459,6 +468,26 @@
         // document.getElementById("body-feels").style.color="black";
     }
 </script>
+<script>
+    function showYourNeed(){
+        document.getElementById('i-need-my').style.display="none";
+        document.getElementById('i-feel').style.display="none";
+        document.getElementById('body-feels').style.display="none";
+        document.getElementById('choice').style.display="block";
+        document.getElementById('choice').innerHTML="I NEED";
+    }
+</script>
+
+<script>
+    function hideYourNeed(){
+        document.getElementById('i-need-my').style.display="block";
+        document.getElementById('i-feel').style.display="block";
+        document.getElementById('body-feels').style.display="block";
+        document.getElementById('choice').style.display="none";
+        document.getElementById('choice').innerHTML="My Choice";
+    }
+</script>
+
 <!-- <script>
     function showSelect(){
         document.getElementById('select-sick').style.display="block";

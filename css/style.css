@@ -4345,97 +4345,173 @@ ul.count_down.white li p:nth-child(2) {
     height:60px;
     width:60px;
 }
-#feelings{
+
+#button-1 {
+    display: inline-block;
     position:absolute;
     top:10.75%;
-    left:53.5%;
-    z-index: 1;
-    height:35px;
-    width:35px;
-    /* display:flex;
-    flex-direction:row; */
-    /* border:solid 2px black; */
-}
-#feelings-btn,
-#body-btn,
-#needs-btn{
-    height:30px;
-    width:30px;
-    /* border:2px solid magenta; */
-}
-#i-feel{
-    /* display:none; */
-    position:absolute;
-    top:10.75%;
-    left:55.5%;
-    z-index: 2;
-    font-family: 'Roboto', sans-serif;
-    font-size:16pt;
-    color: black;
+    left:55.3%;
+    z-index: 3;
+    width: 33px;
+    height: 33px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
     text-align: center;
-    font-weight: bold;
-    /* width:200px; */
-    /* font-weight: bold; */
-}
-#body-needs{
+    /* color: #000; */
+    text-transform: uppercase;
+    font-weight: 600;
+    /* margin-top:10px;
+    margin-left: 30px;
+    margin-bottom: 30px; */
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+  }
+  #button-1:hover,
+  #button-2:hover,
+  #button-3:hover{
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+    
+  }
+  #button-1:hover ~#i-feel,
+  #button-2:hover ~#body-feels,
+  #button-3:hover ~#i-need-my{
+    text-decoration: underline solid #00d7c3;
+  }
+
+  #button-2{
     position:absolute;
     top:30.25%;
+    left:60%;
+    z-index: 3;
+    width: 33px;
+    height: 33px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    text-align: center;
+    /* color: #000; */
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+  }
+  #button-3{
+    position:absolute;
+    top:48%;
+    left:56%;
+    z-index: 3;
+    width: 33px;
+    height: 33px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    text-align: center;
+    /* color: #000; */
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+  }
+
+#i-feel{
+    position:absolute;
+    top:11.15%;
     left:58.25%;
-    z-index: 1;
-    height:35px;
-    width:35px;
-    /* display:flex;
-    flex-direction:row; */
-    /* border:solid 2px black; */
+    z-index: 2;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* text-align: center; */
+    text-transform: uppercase;
+    color: #00d7c3;
+    font-size:16pt;
+    font-weight: bold;
 }
+#body-feels{
+    /* display:none; */
+    position:absolute;
+    top:30.6%;
+    left:63%;
+    z-index: 2;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* text-align: center; */
+    text-transform: uppercase;
+    color: #00d7c3;
+    font-size:16pt;
+    font-weight: bold;
+
+}
+#i-need-my{
+    position:absolute;
+    top:48.5%;
+    left:59.25%;
+    height:30px;
+    width:110px; 
+    z-index: 2;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* text-align: center; */
+    text-transform: uppercase;
+    color: #00d7c3;
+    font-size:16pt;
+    font-weight: bold;
+}
+#choice{
+    display: none;
+    position:absolute;
+    top:11.75%;
+    left:23.25%;
+    z-index: 2;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    /* color:transparent; */
+    color: #00d7c3;
+    font-size:16pt;
+    font-weight: bold;
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    height:40px;
+    width:200px;
+    padding-top:5px;
+    border-radius: 10px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+}
+
+/* 
 #my-needs{
     position:absolute;
     top:48%;
     left:56%;
     z-index: 1;
     height:35px;
-    width:35px;
+    width:35px; */
     /* display:flex;
     flex-direction:row; */
     /* border:solid 2px black; */
-}
+/* } */
 
-#body-feels{
-    /* display:none; */
-    position:absolute;
-    top:30.25%;
-    left:60%;
-    height:30px;
-    width:100px; 
-    z-index: 2;
-    font-family: 'Roboto', sans-serif;
-    /* border:solid 2px black; */
-    font-size:16pt;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-}
 
-#i-need-my{
-    /* display:none; */
-    position:absolute;
-    top:48%;
-    left:57.5%;
-    height:30px;
-    width:100px; 
-    z-index: 2;
-    font-family: 'Roboto', sans-serif;
-    /* border:solid 2px black; */
-    font-size:16pt;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-}
+
+
 
 #emotion{
     position:absolute;
     top:5%;
-    left:67%;
+    left:63.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4478,7 +4554,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion2{
     position:absolute;
     top:5%;
-    left:76%;
+    left:72.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4521,7 +4597,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion3{
     position:absolute;
     top:22.5%;
-    left:67%;
+    left:63.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4564,7 +4640,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion4{
     position:absolute;
     top:22.5%;
-    left:76%;
+    left:72.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4607,7 +4683,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion5{
     position:absolute;
     top:40%;
-    left:67%;
+    left:63.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -4650,7 +4726,7 @@ ul.count_down.white li p:nth-child(2) {
 #emotion6{
     position:absolute;
     top:40%;
-    left:76%;
+    left:72.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -5397,3 +5473,19 @@ input[type=checkbox] {
     transform: translateX(100%);
   }
 
+  /* .button {
+    width: 35px;
+    height: 35px;
+
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top:10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: inline-block;
+  } */
+  
+ 
