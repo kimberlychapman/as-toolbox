@@ -138,18 +138,19 @@
 <!--Header end-->
 
 <!--slider-->
+
 <div id="choice">My Choice</div>
-<div id="button-1" onclick="showEmotion()" ondblclick="hideEmotion()"></div>
+<!-- Emotional Needs -->
+<div id="holder1">
+    <input type="checkbox" id="switch1" onclick="toggleSwitch1()"/><label for="switch1">Toggle</label>
+</div>
 <div id="i-feel">My Feelings</div>
-
-
 <div id="emotion">
     <div id="emotion-inner">
         <img id="mood" src="images/happy.png">
         <div id="emotion-text">Happy</div>
     </div>
 </div>
-
 <div id="emotion2">
     <div id="emotion-inner">
         <img id="mood2" src="images/sad.png">
@@ -180,9 +181,12 @@
         <div id="emotion-text6">Tired</div>
     </div>
 </div>
-
-
-<div id="button-2" onclick=showBody() ondblclick="hideBody()"></div>
+<!-- Emotional Needs End-->
+<!-- Body Needs -->
+<div id="my-body">
+<div id="holder2">
+    <input type="checkbox" id="switch2" onclick="toggleSwitch2()"/><label for="switch2">Toggle</label>
+</div>
 <div id="body-feels">My Body</div>
 <div id="i-need1">
     <div id="need1-inner">
@@ -190,12 +194,6 @@
         <div id="need-text1">Inhaler</div>
     </div>
 </div>
-<!-- <div id="i-need2">
-    <div id="need2-inner">
-        <img id="need2" src="images/headache.png">
-        <div id="need-text2">Head hurts</div>
-    </div>
-</div> -->
 <div id="i-need3" onclick="showSick()" ondblclick="hideSick()" onmouseover="showSelect()" onmouseout="hideSelect()">
     <div id="need3-inner">
         <img id="need3" src="images/sick.png">
@@ -234,9 +232,8 @@
     </div>
 </div>
 <div id="sick4">
-    <!-- <div id="sick4-inner"></div> -->
-        <img id="sick-4" src="images/hot.png">
-        <div id="sick-text4">Hot</div>
+    <img id="sick-4" src="images/hot.png">
+    <div id="sick-text4">Hot</div>
     </div>
 </div>
 <div id="sick5">
@@ -251,7 +248,7 @@
         <div id="sick-text6">Tummy ache</div>
     </div>
 </div>
-<div id="hurts" onmouseover="showWhatHurts()" onmouseout="hideWhatHurts()" onclick="thisHurts()" ondblclick="notHurt()">
+<div id="hurts" onclick="thisHurts()" ondblclick="notHurt()">
     <div id="hurts-inner">
         <img id="hurts1" src="images/body_hurts.png">
         <div id="hurts-text">I'm hurt</div>
@@ -290,9 +287,395 @@
     <img id="foot-hurting" src="images/foot_hurts.png">
     <div id="foot-text">Foot</div>
 </div>
-
-<div id="button-3" onclick="showYourNeed()" ondblclick="hideYourNeed()"></div>
+</div>
+<!-- Body Needs End-->
+<!-- Self Regulation Needs -->
+<div id="holder3">
+    <input type="checkbox" id="switch3" onclick="toggleSwitch3()"/><label for="switch3">Toggle</label>
+</div>
 <div id="i-need-my">I Need</div>
+<div id="tool1">
+    <div id="tool1-inner">
+        <img id="tool1-pic" src="images/headphones.png">
+        <div id="tool1-text">Headphones</div>
+    </div>
+</div>
+<div id="tool2">
+    <div id="tool2-inner">
+        <img id="tool2-pic" src="images/break.png">
+        <div id="tool2-text">Work Break</div>
+    </div>
+</div>
+<div id="tool3">
+    <div id="tool3-inner">
+        <img id="tool3-pic" src="images/supplies.png">
+        <div id="tool3-text">Material</div>
+    </div>
+</div>
+<div id="tool4">
+    <div id="tool4-inner">
+        <img id="tool4-pic" src="images/timer.png">
+        <div id="tool4-text">Timer</div>
+    </div>
+</div>
+<!-- <div id="tool5">
+    <div id="tool5-inner">
+        <img id="tool5-pic" src="images/choices.png">
+        <div id="tool5-text">Choices</div>
+    </div>
+</div> -->
+
+<!-- Self Regulation Needs End -->
+
+<script>
+    function toggleSwitch1(){
+    var checkBox = document.getElementById("switch1");
+    // var tool1 = document.getElementById('tool1');
+    // var tool2 = document.getElementById('tool2');
+    // var tool3 = document.getElementById('tool3');
+    // var tool4 = document.getElementById('tool4');
+    var choice = document.getElementById('choice');
+    var emotion = document.getElementById('emotion');
+    var emotion2 = document.getElementById('emotion2');
+    var emotion3 = document.getElementById('emotion3');
+    var emotion4 = document.getElementById('emotion4');
+    var emotion5 = document.getElementById('emotion5');
+    var emotion6 = document.getElementById('emotion6');
+    // var need1= document.getElementById('i-need1');
+    // var need3 = document.getElementById('i-need3');
+    // var need4 = document.getElementById('i-need4');
+    // var need5 = document.getElementById('i-need5');
+    // var hurts = document.getElementById('hurts');
+    var needTitle = document.getElementById('i-need-my');
+    var ifeel = document.getElementById('i-feel');
+    var bodyfeels = document.getElementById('body-feels');
+    // var sick1 = document.getElementById('sick1');
+    // var sick2 = document.getElementById('sick2');
+    // var sick3 = document.getElementById('sick3');
+    // var sick4 = document.getElementById('sick4');
+    // var sick5 = document.getElementById('sick5');
+    // var sick6 = document.getElementById('sick6');
+    // var head = document.getElementById('head-hurts')
+    // var neck = document.getElementById('neck-hurts')
+    // var back = document.getElementById('back-hurts')
+    // var tummy = document.getElementById('tummy-hurts')
+    // var arm = document.getElementById('arm-hurts')
+    // var leg = document.getElementById('leg-hurts')
+    // var hand = document.getElementById('hand-hurts')
+    // var foot = document.getElementById('foot-hurts')
+
+    if (checkBox.checked == true){
+    //   tool1.style.display = "none";
+    //   tool2.style.display = "none";
+    //   tool3.style.display = "none";
+    //   tool4.style.display = "none";
+      emotion.style.display= "flex";
+      emotion2.style.display= "flex";
+      emotion3.style.display= "flex";
+      emotion4.style.display= "flex";
+      emotion5.style.display= "flex";
+      emotion6.style.display= "flex";
+      choice.style.display="block";
+      choice.innerHTML="My Feelings";
+    //   need1.style.display="none";
+    //   need3.style.display="none";
+    //   need4.style.display="none";
+    //   need5.style.display="none";
+    //   hurts.style.display="none";
+      needTitle.style.display="none";
+      ifeel.style.display="none";
+      bodyfeels.style.display="none";
+    //   sick1.style.display="none";
+    //   sick2.style.display="none";
+    //   sick3.style.display="none";
+    //   sick4.style.display="none";
+    //   sick5.style.display="none";
+    //   sick6.style.display="none";
+
+    //   head.style.display="none";
+    //   neck.style.display="none";
+    //   back.style.display="none";
+    //   tummy.style.display="none";
+    //   arm.style.display="none";
+    //   leg.style.display="none";
+    //   hand.style.display="none";
+    //   foot.style.display="none";
+    }
+    else{
+    //   tool1.style.display="none";
+    //   tool2.style.display = "none";
+    //   tool3.style.display = "none";
+    //   tool4.style.display = "none";
+      emotion.style.display= "none";
+      emotion2.style.display= "none";
+      emotion3.style.display= "none";
+      emotion4.style.display= "none";
+      emotion5.style.display= "none";
+      emotion6.style.display= "none";
+      choice.style.display="none";
+      choice.innerHTML="My Choice";
+    //   need1.style.display="none";
+    //   need3.style.display="none";
+    //   need4.style.display="none";
+    //   need5.style.display="none";
+    //   hurts.style.display="none";
+    //   sick1.style.display="none";
+    //   sick2.style.display="none";
+    //   sick3.style.display="none";
+    //   sick4.style.display="none";
+    //   sick5.style.display="none";
+    //   sick6.style.display="none";
+
+    //   head.style.display="none";
+    //   neck.style.display="none";
+    //   back.style.display="none";
+    //   tummy.style.display="none";
+    //   arm.style.display="none";
+    //   leg.style.display="none";
+    //   hand.style.display="none";
+    //   foot.style.display="none";
+
+      needTitle.style.display="block";
+      ifeel.style.display="block";
+      bodyfeels.style.display="block";
+    }
+  }
+</script>
+
+
+<script>
+    function toggleSwitch2(){
+    var checkBox = document.getElementById("switch2");
+    // var tool1 = document.getElementById('tool1');
+    // var tool2 = document.getElementById('tool2');
+    // var tool3 = document.getElementById('tool3');
+    // var tool4 = document.getElementById('tool4');
+    var choice = document.getElementById('choice');
+    // var emotion = document.getElementById('emotion');
+    // var emotion2 = document.getElementById('emotion2');
+    // var emotion3 = document.getElementById('emotion3');
+    // var emotion4 = document.getElementById('emotion4');
+    // var emotion5 = document.getElementById('emotion5');
+    // var emotion6 = document.getElementById('emotion6');
+    var need1= document.getElementById('i-need1');
+    var need3 = document.getElementById('i-need3');
+    var need4 = document.getElementById('i-need4');
+    var need5 = document.getElementById('i-need5');
+    var hurts = document.getElementById('hurts');
+    var needTitle = document.getElementById('i-need-my');
+    var ifeel = document.getElementById('i-feel');
+    var bodyfeels = document.getElementById('body-feels');
+    var sick1 = document.getElementById('sick1');
+    var sick2 = document.getElementById('sick2');
+    var sick3 = document.getElementById('sick3');
+    var sick4 = document.getElementById('sick4');
+    var sick5 = document.getElementById('sick5');
+    var sick6 = document.getElementById('sick6');
+    var head = document.getElementById('head-hurts')
+    var neck = document.getElementById('neck-hurts')
+    var back = document.getElementById('back-hurts')
+    var tummy = document.getElementById('tummy-hurts')
+    var arm = document.getElementById('arm-hurts')
+    var leg = document.getElementById('leg-hurts')
+    var hand = document.getElementById('hand-hurts')
+    var foot = document.getElementById('foot-hurts')
+
+    if (checkBox.checked == true){
+    //   tool1.style.display = "none";
+    //   tool2.style.display = "none";
+    //   tool3.style.display = "none";
+    //   tool4.style.display = "none";
+    //   emotion.style.display= "flex";
+    //   emotion2.style.display= "flex";
+    //   emotion3.style.display= "flex";
+    //   emotion4.style.display= "flex";
+    //   emotion5.style.display= "flex";
+    //   emotion6.style.display= "flex";
+      choice.style.display="block";
+      choice.innerHTML="My Body";
+      need1.style.display="block";
+      need3.style.display="block";
+      need4.style.display="block";
+      need5.style.display="block";
+      hurts.style.display="block";
+      needTitle.style.display="none";
+      ifeel.style.display="none";
+      bodyfeels.style.display="none";
+    //   sick1.style.display="none";
+    //   sick2.style.display="none";
+    //   sick3.style.display="none";
+    //   sick4.style.display="none";
+    //   sick5.style.display="none";
+    //   sick6.style.display="none";
+
+    //   head.style.display="none";
+    //   neck.style.display="none";
+    //   back.style.display="none";
+    //   tummy.style.display="none";
+    //   arm.style.display="none";
+    //   leg.style.display="none";
+    //   hand.style.display="none";
+    //   foot.style.display="none";
+    }
+    else{
+    //   tool1.style.display="none";
+    //   tool2.style.display = "none";
+    //   tool3.style.display = "none";
+    //   tool4.style.display = "none";
+    //   emotion.style.display= "none";
+    //   emotion2.style.display= "none";
+    //   emotion3.style.display= "none";
+    //   emotion4.style.display= "none";
+    //   emotion5.style.display= "none";
+    //   emotion6.style.display= "none";
+      choice.style.display="none";
+      choice.innerHTML="My Choice";
+      need1.style.display="none";
+      need3.style.display="none";
+      need4.style.display="none";
+      need5.style.display="none";
+      hurts.style.display="none";
+      sick1.style.display="none";
+      sick2.style.display="none";
+      sick3.style.display="none";
+      sick4.style.display="none";
+      sick5.style.display="none";
+      sick6.style.display="none";
+
+      head.style.display="none";
+      neck.style.display="none";
+      back.style.display="none";
+      tummy.style.display="none";
+      arm.style.display="none";
+      leg.style.display="none";
+      hand.style.display="none";
+      foot.style.display="none";
+
+      needTitle.style.display="block";
+      ifeel.style.display="block";
+      bodyfeels.style.display="block";
+    }
+  }
+</script>
+
+<script>
+    function toggleSwitch3(){
+    var checkBox = document.getElementById("switch3");
+    var tool1 = document.getElementById('tool1');
+    var tool2 = document.getElementById('tool2');
+    var tool3 = document.getElementById('tool3');
+    var tool4 = document.getElementById('tool4');
+    var choice = document.getElementById('choice');
+    var emotion = document.getElementById('emotion');
+    var emotion2 = document.getElementById('emotion2');
+    var emotion3 = document.getElementById('emotion3');
+    var emotion4 = document.getElementById('emotion4');
+    var emotion5 = document.getElementById('emotion5');
+    var emotion6 = document.getElementById('emotion6');
+    var need1= document.getElementById('i-need1');
+    var need3 = document.getElementById('i-need3');
+    var need4 = document.getElementById('i-need4');
+    var need5 = document.getElementById('i-need5');
+    var hurts = document.getElementById('hurts');
+    var needTitle = document.getElementById('i-need-my');
+    var ifeel = document.getElementById('i-feel');
+    var bodyfeels = document.getElementById('body-feels');
+    var sick1 = document.getElementById('sick1');
+    var sick2 = document.getElementById('sick2');
+    var sick3 = document.getElementById('sick3');
+    var sick4 = document.getElementById('sick4');
+    var sick5 = document.getElementById('sick5');
+    var sick6 = document.getElementById('sick6');
+
+    var head = document.getElementById('head-hurts')
+    var neck = document.getElementById('neck-hurts')
+    var back = document.getElementById('back-hurts')
+    var tummy = document.getElementById('tummy-hurts')
+
+    var arm = document.getElementById('arm-hurts')
+    var leg = document.getElementById('leg-hurts')
+    var hand = document.getElementById('hand-hurts')
+    var foot = document.getElementById('foot-hurts')
+
+    if (checkBox.checked == true){
+      tool1.style.display = "flex";
+      tool2.style.display = "flex";
+      tool3.style.display = "flex";
+      tool4.style.display = "flex";
+    //   emotion.style.display= "none";
+    //   emotion2.style.display= "none";
+    //   emotion3.style.display= "none";
+    //   emotion4.style.display= "none";
+    //   emotion5.style.display= "none";
+    //   emotion6.style.display= "none";
+      choice.style.display="block";
+      choice.innerHTML="I Need";
+    //   need1.style.display="none";
+    //   need3.style.display="none";
+    //   need4.style.display="none";
+    //   need5.style.display="none";
+    //   hurts.style.display="none";
+      needTitle.style.display="none";
+      ifeel.style.display="none";
+      bodyfeels.style.display="none";
+    //   sick1.style.display="none";
+    //   sick2.style.display="none";
+    //   sick3.style.display="none";
+    //   sick4.style.display="none";
+    //   sick5.style.display="none";
+    //   sick6.style.display="none";
+
+    //   head.style.display="none";
+    //   neck.style.display="none";
+    //   back.style.display="none";
+    //   tummy.style.display="none";
+    //   arm.style.display="none";
+    //   leg.style.display="none";
+    //   hand.style.display="none";
+    //   foot.style.display="none";
+    }
+    else{
+      tool1.style.display="none";
+      tool2.style.display = "none";
+      tool3.style.display = "none";
+      tool4.style.display = "none";
+    //   emotion2.style.display= "none";
+    //   emotion3.style.display= "none";
+    //   emotion4.style.display= "none";
+    //   emotion5.style.display= "none";
+    //   emotion6.style.display= "none";
+      choice.style.display="none";
+      choice.innerHTML="My Choice";
+    //   need1.style.display="none";
+    //   need3.style.display="none";
+    //   need4.style.display="none";
+    //   need5.style.display="none";
+    //   hurts.style.display="none";
+    //   sick1.style.display="none";
+    //   sick2.style.display="none";
+    //   sick3.style.display="none";
+    //   sick4.style.display="none";
+    //   sick5.style.display="none";
+    //   sick6.style.display="none";
+
+    //   head.style.display="none";
+    //   neck.style.display="none";
+    //   back.style.display="none";
+    //   tummy.style.display="none";
+    //   arm.style.display="none";
+    //   leg.style.display="none";
+    //   hand.style.display="none";
+    //   foot.style.display="none";
+
+      needTitle.style.display="block";
+      ifeel.style.display="block";
+      bodyfeels.style.display="block";
+    }
+  }
+</script>
+
+
+
 <!-- <div class="button button-1">Neon</div> -->
 <!-- <ul id="placeholder">
     <li>Help</li>
@@ -454,6 +837,10 @@
         document.getElementById('leg-hurts').style.display="none";
         document.getElementById('hand-hurts').style.display="none";
         document.getElementById('foot-hurts').style.display="none";
+        document.getElementById('i-need1').style.display="none";
+        document.getElementById('i-need4').style.display="none";
+        document.getElementById('i-need5').style.display="none";
+        document.getElementById('hurts').style.display="none";
         // document.getElementById("body-feels").style.display="none";
     }
 </script>
@@ -465,51 +852,13 @@
         document.getElementById("sick4").style.display="none";
         document.getElementById("sick5").style.display="none";
         document.getElementById("sick6").style.display="none";
+        document.getElementById('i-need1').style.display="block";
+        document.getElementById('i-need4').style.display="block";
+        document.getElementById('i-need5').style.display="block";
+        document.getElementById('hurts').style.display="block";
         // document.getElementById("body-feels").style.color="black";
     }
 </script>
-<script>
-    function showYourNeed(){
-        document.getElementById('i-need-my').style.display="none";
-        document.getElementById('i-feel').style.display="none";
-        document.getElementById('body-feels').style.display="none";
-        document.getElementById('choice').style.display="block";
-        document.getElementById('choice').innerHTML="I NEED";
-    }
-</script>
-
-<script>
-    function hideYourNeed(){
-        document.getElementById('i-need-my').style.display="block";
-        document.getElementById('i-feel').style.display="block";
-        document.getElementById('body-feels').style.display="block";
-        document.getElementById('choice').style.display="none";
-        document.getElementById('choice').innerHTML="My Choice";
-    }
-</script>
-
-<!-- <script>
-    function showSelect(){
-        document.getElementById('select-sick').style.display="block";
-
-    }
-</script>
-<script>
-    function hideSelect(){
-        document.getElementById('select-sick').style.display="none";
-
-    }
-</script> -->
-<!-- <script>
-    function showWhatHurts(){
-        document.getElementById('what-hurts').style.display="block";
-    }
-</script>
-<script>
-    function hideWhatHurts(){
-        document.getElementById('what-hurts').style.display="none";
-    }
-</script> -->
 <script>
     function thisHurts(){
         document.getElementById('head-hurts').style.display="block";
@@ -526,6 +875,10 @@
         document.getElementById("sick4").style.display="none";
         document.getElementById("sick5").style.display="none";
         document.getElementById("sick6").style.display="none";
+        document.getElementById('i-need1').style.display="none";
+        document.getElementById('i-need3').style.display="none";
+        document.getElementById('i-need4').style.display="none";
+        document.getElementById('i-need5').style.display="none";
     }
 </script>
 <script>
@@ -538,8 +891,77 @@
         document.getElementById('leg-hurts').style.display="none";
         document.getElementById('hand-hurts').style.display="none";
         document.getElementById('foot-hurts').style.display="none";
+        document.getElementById('i-need1').style.display="block";
+        document.getElementById('i-need3').style.display="block";
+        document.getElementById('i-need4').style.display="block";
+        document.getElementById('i-need5').style.display="block";
     }
 </script>
+<script>
+    function showYourNeed(){
+        document.getElementById('i-need-my').style.display="none";
+        document.getElementById('i-feel').style.display="none";
+        document.getElementById('body-feels').style.display="none";
+        document.getElementById('choice').style.display="block";
+        document.getElementById('choice').innerHTML="I NEED";
+        document.getElementById('i-need1').style.display="none";
+        document.getElementById('i-need3').style.display="none";
+        document.getElementById('i-need4').style.display="none";
+        document.getElementById('i-need5').style.display="none";
+        document.getElementById('emotion').style.display="none";
+        document.getElementById('emotion2').style.display="none";
+        document.getElementById('emotion3').style.display="none";
+        document.getElementById('emotion4').style.display="none";
+        document.getElementById('emotion5').style.display="none";
+        document.getElementById('emotion6').style.display="none";
+        document.getElementById('hurts').style.display="none";
+        document.getElementById("sick1").style.display="none";
+        document.getElementById("sick2").style.display="none";
+        document.getElementById("sick3").style.display="none";
+        document.getElementById("sick4").style.display="none";
+        document.getElementById("sick5").style.display="none";
+        document.getElementById("sick6").style.display="none";
+        document.getElementById("hurts").style.display="none";
+        document.getElementById('head-hurts').style.display="none";
+        document.getElementById('neck-hurts').style.display="none";
+        document.getElementById('back-hurts').style.display="none";
+        document.getElementById('tummy-hurts').style.display="none";
+        document.getElementById('arm-hurts').style.display="none";
+        document.getElementById('leg-hurts').style.display="none";
+        document.getElementById('hand-hurts').style.display="none";
+        document.getElementById('foot-hurts').style.display="none";
+    }
+</script>
+
+<script>
+    function hideYourNeed(){
+        document.getElementById('i-need-my').style.display="block";
+        document.getElementById('i-feel').style.display="block";
+        document.getElementById('body-feels').style.display="block";
+        document.getElementById('choice').style.display="none";
+        document.getElementById('choice').innerHTML="My Choice";
+        document.getElementById("i-need3").style.display="none";
+        document.getElementById("i-need4").style.display="none";
+        document.getElementById("i-need5").style.display="none";
+        document.getElementById("sick1").style.display="none";
+        document.getElementById("sick2").style.display="none";
+        document.getElementById("sick3").style.display="none";
+        document.getElementById("sick4").style.display="none";
+        document.getElementById("sick5").style.display="none";
+        document.getElementById("sick6").style.display="none";
+        document.getElementById("hurts").style.display="none";
+        document.getElementById('head-hurts').style.display="none";
+        document.getElementById('neck-hurts').style.display="none";
+        document.getElementById('back-hurts').style.display="none";
+        document.getElementById('tummy-hurts').style.display="none";
+        document.getElementById('arm-hurts').style.display="none";
+        document.getElementById('leg-hurts').style.display="none";
+        document.getElementById('hand-hurts').style.display="none";
+        document.getElementById('foot-hurts').style.display="none";
+    }
+</script>
+
+
 <section id="home" class="p-0 dark-slider single-slide">
     <h2 class="d-none">hidden</h2>
     <div id="rev_single_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="wexim_slider_01" data-source="gallery" style="background:transparent;padding:0px;">
@@ -799,6 +1221,8 @@
 <script src="js/map.js"></script>
 <!-- custom script -->
 <script src="js/script.js"></script>
+<!-- for toggle switch -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </body>
 </html>
