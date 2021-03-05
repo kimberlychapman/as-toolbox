@@ -4471,7 +4471,7 @@ ul.count_down.white li p:nth-child(2) {
     display: none;
     position:absolute;
     top:11.75%;
-    left:23.25%;
+    left:33%;
     z-index: 2;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
