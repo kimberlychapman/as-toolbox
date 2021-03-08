@@ -4471,7 +4471,7 @@ ul.count_down.white li p:nth-child(2) {
     display: none;
     position:absolute;
     top:11.75%;
-    left:33%;
+    left:32.5%;
     z-index: 2;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
@@ -4494,23 +4494,23 @@ ul.count_down.white li p:nth-child(2) {
 
 #emotion{
     position:absolute;
-    top:5%;
-    left:63.5%;
+    top:19.5%;
+    left:27%;
     display: none;
     /* display:flex; */
     justify-content:center;
     align-items:center;
     background: rgb(127, 255, 212, 0.5);
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     text-align:center;
     z-index:2;
 }
 #emotion-inner{
     background: rgb(240, 255, 255, 0.8);
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 #mood{
@@ -4521,14 +4521,15 @@ ul.count_down.white li p:nth-child(2) {
 }
 #emotion-text{
     background:transparent;
-    width: 110px;
+    width: 70px;
     height: 30px;
     align-items:center;
     /* border:2px solid magenta; */
-    font-size:16pt;
+    font-size:13pt;
     color:black;
     text-align:center;
-    /* margin-top:-5%; */
+    margin-left:11.5px;
+    margin-top:-3%;
     z-index: 3;
     font-weight: bold;
     /* margin-left:25px; */
@@ -4537,23 +4538,23 @@ ul.count_down.white li p:nth-child(2) {
 
 #emotion2{
     position:absolute;
-    top:5%;
-    left:72.5%;
+    top:19.5%;
+    left:35%;
     display: none;
     /* display:flex; */
     justify-content:center;
     align-items:center;
     background: rgb(0, 0, 255, 0.6);
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     text-align:center;
     z-index:2;
 }
 #emotion-inner2{
     background: rgb(0, 0, 255, 0.8);
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 #mood2{
@@ -4564,13 +4565,15 @@ ul.count_down.white li p:nth-child(2) {
 }
 #emotion-text2{
     background:transparent;
-    width: 110px;
+    width: 40px;
     height: 30px;
     align-items:center;
     /* border:2px solid magenta; */
-    font-size:16pt;
+    font-size:14pt;
     color:black;
     text-align:center;
+    margin-left:25px;
+    margin-top:-4%;
     /* margin-top:-5%; */
     z-index: 3;
     font-weight: bold;
@@ -4580,23 +4583,23 @@ ul.count_down.white li p:nth-child(2) {
 
 #emotion3{
     position:absolute;
-    top:22.5%;
-    left:63.5%;
+    top:34.5%;
+    left:27%;
     display: none;
     /* display:flex; */
     justify-content:center;
     align-items:center;
     background: rgb(255,0,0, 0.5);
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     text-align:center;
     z-index:2;
 }
 #emotion-inner3{
     background: rgb(255,0,0,0.8);
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 #mood3{
@@ -4607,13 +4610,15 @@ ul.count_down.white li p:nth-child(2) {
 }
 #emotion-text3{
     background:transparent;
-    width: 110px;
+    width: 40px;
     height: 30px;
     align-items:center;
     /* border:2px solid magenta; */
-    font-size:16pt;
+    font-size:14pt;
     color:black;
     text-align:center;
+    margin-left:25px;
+    margin-top:-4%;
     /* margin-top:-5%; */
     z-index: 3;
     font-weight: bold;
@@ -4623,66 +4628,66 @@ ul.count_down.white li p:nth-child(2) {
 
 #emotion4{
     position:absolute;
-    top:22.5%;
-    left:72.5%;
+    top:34.5%;
+    left:35%;
     display: none;
     /* display:flex; */
     justify-content:center;
     align-items:center;
     background:rgb(255, 215, 0, 0.5);
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     text-align:center;
     z-index:2;
 }
 #emotion-inner4{
     background:rgb(255, 215, 0, 0.8);
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 #mood4{
-    height:70px;
-    width:80px;
+    height:65px;
+    width:75px;
     border-radius: 50%;
     margin-top:5%;
 }
 #emotion-text4{
     background:transparent;
-    width: 110px;
+    width: 60px;
     height: 30px;
     align-items:center;
     /* border:2px solid magenta; */
-    font-size:16pt;
+    font-size:14pt;
     color:black;
     text-align:center;
-    /* margin-top:-5%; */
+    margin-top:-3%;
     z-index: 3;
     font-weight: bold;
-    /* margin-left:25px; */
+    margin-left:16px;
     /* border-radius: 50%; */
 }
 
 #emotion5{
     position:absolute;
-    top:40%;
-    left:63.5%;
+    top:50%;
+    left:27%;
     display: none;
     /* display:flex; */
     justify-content:center;
     align-items:center;
     background: rgb(138, 43, 226, 0.5);
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     text-align:center;
     z-index:2;
 }
 #emotion-inner5{
     background: rgb(138, 43, 226, 0.8);
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 #mood5{
@@ -4693,39 +4698,40 @@ ul.count_down.white li p:nth-child(2) {
 }
 #emotion-text5{
     background:transparent;
-    width: 110px;
+    width: 90px;
     height: 30px;
     align-items:center;
     /* border:2px solid magenta; */
-    font-size:16pt;
+    font-size:12pt;
     color:black;
     text-align:center;
-    /* margin-top:-5%; */
+    margin-top:-3%;
     z-index: 3;
     font-weight: bold;
+    /* margin-left:16px; */
     /* margin-left:25px; */
     /* border-radius: 50%; */
 }
 
 #emotion6{
     position:absolute;
-    top:40%;
-    left:72.5%;
+    top:50%;
+    left:35%;
     display: none;
     /* display:flex; */
     justify-content:center;
     align-items:center;
     background: rgb(135, 206, 250, 0.5);
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     text-align:center;
     z-index:2;
 }
 #emotion-inner6{
     background: rgb(135, 206, 250, 0.8);
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 #mood6{
@@ -4736,17 +4742,17 @@ ul.count_down.white li p:nth-child(2) {
 }
 #emotion-text6{
     background:transparent;
-    width: 110px;
+    width: 50px;
     height: 30px;
     align-items:center;
     /* border:2px solid magenta; */
-    font-size:16pt;
+    font-size:12pt;
     color:black;
     text-align:center;
-    /* margin-top:-5%; */
+    margin-top:-3%;
     z-index: 3;
     font-weight: bold;
-    /* margin-left:25px; */
+    margin-left:18.5px;
     /* border-radius: 50%; */
 }
 
