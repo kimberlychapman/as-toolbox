@@ -345,7 +345,12 @@
 <div id="eraser" onclick="clearBoard()">
     <img id="erase" src="images/eraser.png">
 </div>
-
+<div id="happy-display">
+    <img id="stay-happy" src="images/stay-happy.png">
+</div>
+<div id="better-display">
+    <img id="get-better" src="images/get-better.png">
+</div>
 <!-- Self Regulation Needs End -->
 
 <script>
@@ -898,7 +903,8 @@
     function happyEffect(){
         document.getElementById('emotion').style.webkitTransition="all .15s ease-in-out";
         document.getElementById('emotion').style.transition="all .15s ease-in-out";
-        document.getElementById('emotion').style.boxShadow="0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3";
+        document.getElementById('emotion').style.boxShadow="0 0 10px 0 #00b0b3 inset, 0 0 20px 2px #00b0b3";
+        document.getElementById('happy-display').style.display="block";
     }
 </script>
 <script>
@@ -920,6 +926,7 @@
         document.getElementById('emotion4').style.webkitTransition="all .15s ease-in-out";
         document.getElementById('emotion4').style.transition="all .15s ease-in-out";
         document.getElementById('emotion4').style.boxShadow="0 0 10px 0 #ffd700 inset, 0 0 20px 2px #ffd700";
+        document.getElementById('better-display').style.display="block";
     }
 </script>
 <script>
@@ -933,7 +940,7 @@
     function tiredEffect(){
         document.getElementById('emotion6').style.webkitTransition="all .15s ease-in-out";
         document.getElementById('emotion6').style.transition="all .15s ease-in-out";
-        document.getElementById('emotion6').style.boxShadow="0 0 10px 0 #87cefa inset, 0 0 20px 2px #87cefa";
+        document.getElementById('emotion6').style.boxShadow="0 0 20px 0 #3baff7 inset, 0 0 20px 2px #3baff7";
     }
 </script>
 <script>
@@ -956,6 +963,8 @@
         document.getElementById('emotion6').style.webkitTransition="none";
         document.getElementById('emotion6').style.transition="none";
         document.getElementById('emotion6').style.boxShadow="none";
+        document.getElementById('happy-display').style.display="none";
+        document.getElementById('better-display').style.display="none";
 
     }
 </script>
