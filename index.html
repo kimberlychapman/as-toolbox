@@ -145,37 +145,37 @@
     <input type="checkbox" id="switch1" onclick="toggleSwitch1()"/><label for="switch1">Toggle</label>
 </div>
 <div id="i-feel">My Feelings</div>
-<div id="emotion">
+<div id="emotion" onclick="happyEffect()">
     <div id="emotion-inner">
         <img id="mood" src="images/happy.png">
         <div id="emotion-text">Happy</div>
     </div>
 </div>
-<div id="emotion2">
+<div id="emotion2" onclick="sadEffect()">
     <div id="emotion-inner2">
         <img id="mood2" src="images/sad.png">
         <div id="emotion-text2">Sad</div>
     </div>
 </div>
-<div id="emotion3">
+<div id="emotion3" onclick="madEffect()">
     <div id="emotion-inner3">
         <img id="mood3" src="images/angry.png">
         <div id="emotion-text3">Mad</div>
     </div>
 </div>
-<div id="emotion4">
+<div id="emotion4" onclick="betterEffect()">
     <div id="emotion-inner4">
         <img id="mood4" src="images/better.png">
         <div id="emotion-text4">Better</div>
     </div>
 </div>
-<div id="emotion5">
+<div id="emotion5" onclick="confusedEffect()">
     <div id="emotion-inner5">
         <img id="mood5" src="images/confused.png">
         <div id="emotion-text5">Confused</div>
     </div>
 </div>
-<div id="emotion6">
+<div id="emotion6" onclick="tiredEffect()">
     <div id="emotion-inner6">
         <img id="mood6" src="images/tired.png">
         <div id="emotion-text6">Tired</div>
@@ -342,7 +342,9 @@
         <div id="tool7-text">Calm Corner</div>
     </div>
 </div>
-
+<div id="eraser" onclick="clearBoard()">
+    <img id="erase" src="images/eraser.png">
+</div>
 
 <!-- Self Regulation Needs End -->
 
@@ -890,6 +892,71 @@
         document.getElementById('leg-hurts').style.display="none";
         document.getElementById('hand-hurts').style.display="none";
         document.getElementById('foot-hurts').style.display="none";
+    }
+</script>
+<script>
+    function happyEffect(){
+        document.getElementById('emotion').style.webkitTransition="all .15s ease-in-out";
+        document.getElementById('emotion').style.transition="all .15s ease-in-out";
+        document.getElementById('emotion').style.boxShadow="0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3";
+    }
+</script>
+<script>
+    function sadEffect(){
+        document.getElementById('emotion2').style.webkitTransition="all .15s ease-in-out";
+        document.getElementById('emotion2').style.transition="all .15s ease-in-out";
+        document.getElementById('emotion2').style.boxShadow="0 0 10px 0 #4d4dff inset, 0 0 20px 2px #4d4dff";
+    }
+</script>
+<script>
+    function madEffect(){
+        document.getElementById('emotion3').style.webkitTransition="all .15s ease-in-out";
+        document.getElementById('emotion3').style.transition="all .15s ease-in-out";
+        document.getElementById('emotion3').style.boxShadow="0 0 10px 0 #ff0000 inset, 0 0 20px 2px #ff0000";
+    }
+</script>
+<script>
+    function betterEffect(){
+        document.getElementById('emotion4').style.webkitTransition="all .15s ease-in-out";
+        document.getElementById('emotion4').style.transition="all .15s ease-in-out";
+        document.getElementById('emotion4').style.boxShadow="0 0 10px 0 #ffd700 inset, 0 0 20px 2px #ffd700";
+    }
+</script>
+<script>
+    function confusedEffect(){
+        document.getElementById('emotion5').style.webkitTransition="all .15s ease-in-out";
+        document.getElementById('emotion5').style.transition="all .15s ease-in-out";
+        document.getElementById('emotion5').style.boxShadow="0 0 10px 0 #8a2be2 inset, 0 0 20px 2px #8a2be2";
+    }
+</script>
+<script>
+    function tiredEffect(){
+        document.getElementById('emotion6').style.webkitTransition="all .15s ease-in-out";
+        document.getElementById('emotion6').style.transition="all .15s ease-in-out";
+        document.getElementById('emotion6').style.boxShadow="0 0 10px 0 #87cefa inset, 0 0 20px 2px #87cefa";
+    }
+</script>
+<script>
+    function clearBoard(){
+        document.getElementById('emotion').style.webkitTransition="none";
+        document.getElementById('emotion').style.transition="none";
+        document.getElementById('emotion').style.boxShadow="none";
+        document.getElementById('emotion2').style.webkitTransition="none";
+        document.getElementById('emotion2').style.transition="none";
+        document.getElementById('emotion2').style.boxShadow="none";
+        document.getElementById('emotion3').style.webkitTransition="none";
+        document.getElementById('emotion3').style.transition="none";
+        document.getElementById('emotion3').style.boxShadow="none";
+        document.getElementById('emotion4').style.webkitTransition="none";
+        document.getElementById('emotion4').style.transition="none";
+        document.getElementById('emotion4').style.boxShadow="none";
+        document.getElementById('emotion5').style.webkitTransition="none";
+        document.getElementById('emotion5').style.transition="none";
+        document.getElementById('emotion5').style.boxShadow="none";
+        document.getElementById('emotion6').style.webkitTransition="none";
+        document.getElementById('emotion6').style.transition="none";
+        document.getElementById('emotion6').style.boxShadow="none";
+
     }
 </script>
 
