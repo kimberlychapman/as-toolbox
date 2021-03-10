@@ -188,7 +188,7 @@
     <input type="checkbox" id="switch2" onclick="toggleSwitch2()"/><label for="switch2">Toggle</label>
 </div>
 <div id="body-feels">My Body</div>
-<div id="i-need1">
+<div id="i-need1" onclick="inhalerEffect()">
     <div id="need1-inner">
         <img id="need1" src="images/asthma.png">
         <div id="need-text1">Inhaler</div>
@@ -359,6 +359,12 @@
 </div>
 <div id="option1"><span id="open-need">Need</span> something?</div>
 <div id="option2"><span style="text-transform:uppercase; font-weight:bold;">Explain</span> and <span style="text-transform: uppercase; font-weight:bold;">Plan</span></div>
+<div id="inhaler" onclick="stopPulse()" ondblclick="startPulse()">
+    <div id="inhaler-inner">
+        <img id="inhaler-pic" src="images/asthma.png">
+        <!-- <div id="inhaler-text">Inhaler</div> -->
+    </div>
+</div>
 <!-- Self Regulation Needs End -->
 
 <script>
@@ -959,6 +965,14 @@
     }
 </script>
 <script>
+    function inhalerEffect(){
+        document.getElementById('i-need1').style.webkitTransition="all .15s ease-in-out";
+        document.getElementById('i-need1').style.transition="all .15s ease-in-out";
+        document.getElementById('i-need1').style.boxShadow="0 0 20px 0 #ff4500 inset, 0 0 20px 2px #ff4500";
+        document.getElementById('inhaler').style.display="flex";
+    }
+</script>
+<script>
     function clearBoard(){
         document.getElementById('emotion').style.webkitTransition="none";
         document.getElementById('emotion').style.transition="none";
@@ -978,13 +992,31 @@
         document.getElementById('emotion6').style.webkitTransition="none";
         document.getElementById('emotion6').style.transition="none";
         document.getElementById('emotion6').style.boxShadow="none";
+        
+        document.getElementById('i-need1').style.webkitTransition="none";
+        document.getElementById('i-need1').style.transition="none";
+        document.getElementById('i-need1').style.boxShadow="none";
+        document.getElementById('inhaler').style.display="none";
+
+
         document.getElementById('happy-display').style.display="none";
         document.getElementById('better-display').style.display="none";
         document.getElementById('option1').style.display="none";
         document.getElementById('option2').style.display="none";
+        document.getElementById('inhaler').style.display="none";
 
     }
 </script>
+<script>
+    function stopPulse(){
+      document.getElementById('inhaler').style.webkitAnimation="none";
+    }
+  </script>
+    <script>
+      function startPulse(){
+        document.getElementById('inhaler').style.webkitAnimation= "pulse 1.5s infinite";
+      }
+    </script>
 
 
 <section id="home" class="p-0 dark-slider single-slide">
