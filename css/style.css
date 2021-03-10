@@ -5609,7 +5609,8 @@ input[type=checkbox] {
 #tool2-pic,
 #tool3-pic,
 #tool4-pic,
-#tool5-pic{
+#tool5-pic,
+#tool8-pic{
     height:60px;
     width:70px;
     border-radius: 50%;
@@ -5621,7 +5622,8 @@ input[type=checkbox] {
 #tool4-text,
 #tool5-text,
 #tool6-text,
-#tool7-text{
+#tool7-text,
+#tool8-text{
     background:transparent;
     width: 108px;
     height: 30px;
@@ -5687,8 +5689,8 @@ input[type=checkbox] {
 }
 #tool4{
     position:absolute;
-    top:53.5%;
-    left:75.75%;
+    top:81.5%;
+    left:55.5%;
     display: none;
     /* display:flex; */
     justify-content:center;
@@ -5796,6 +5798,29 @@ input[type=checkbox] {
     height: 80px;
     border-radius: 50%;
     border:solid 2px #bdf5bd;
+}
+#tool8{
+    position:absolute;
+    top:81.5%;
+    left:62.25%;
+    display: none;
+    /* display:flex; */
+    justify-content:center;
+    align-items:center;
+    background:rgb(255, 26, 26, 0.5);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-align:center;
+    z-index:2;
+    border:solid 2px rgb(255, 26, 26);
+}
+#tool8-inner{
+    background:rgb(255, 26, 26);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:solid 2px #ff6666;
 }
 #switch1{
     height: 0;
@@ -5925,4 +5950,64 @@ input[type=checkbox] {
   z-index:3;
   height:315px;
   width:315px;
+}
+#option1{
+    display:none;
+    position: absolute;
+    top:15%;
+    left:75.5%;
+    height:50px;
+    width:320px;
+    background-color: transparent;
+    color:black;
+    border: solid 2.5px #8080ff;
+    border-radius:20px;
+    /* text-transform: uppercase; */
+    font-size:16pt;
+    font-family:'Poppins', sans-serif;
+    /* font-weight: bold; */
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+
+}
+#open-need{
+    font-family: 'Roboto Condensed', sans-serif;
+    /* text-align: center; */
+    text-transform: uppercase;
+    color: #00d7c3;
+    font-size:16pt;
+    font-weight: bold;
+    border:1.5px solid #00d7c3;
+}
+
+#option2{
+    display:none;
+    position: absolute;
+    top:25%;
+    left:75.5%;
+    height:50px;
+    width:320px;
+    background-color: transparent;
+    color:black;
+    border: solid 2.5px #8080ff;
+    border-radius:20px;
+    /* text-transform: uppercase; */
+    font-size:16pt;
+    font-family:'Poppins', sans-serif;
+    /* font-weight: bold; */
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+
 }
