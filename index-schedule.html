@@ -19,12 +19,17 @@
                         document.getElementById('add').click()">
   <button id="add" class="button add-button" onclick="addTask()">Add New Task</button>
 </div> -->
+<div id="vs-title" onclick="showLiam()" ondblclick="showJacobi()">Jacobi's Visual Schedule</div>
+<!-- <div class="button">Or Click me</div> -->
 <a id="toolbox-go" href="index.html">
   <img id="toolbox-logo" src="images/as_puzzle.png">
   <div id="back">Home</div>
 </a>
 <div id="visual-schedule">
   <img id="my-schedule" src="images/the-schedule.png">
+</div>
+<div id="student">
+  <img id="student-pic" src="images/coolest-kid.png">
 </div>
 <div class="schedule-container">
   <ul class="schedule-columns">
@@ -56,19 +61,20 @@
       </div> -->
       <ul class="task-list" id="doing">
         <li class="task">
-          <p>Morning Meeting</p>
+            <img id="meeting" src="images/morning-meeting.png">
+            <!-- <p>Morning Meeting</p> -->
         </li>
         <li class="task">
-          <p>Math Lesson</p>
+          <img id="math-lesson" src="images/math-lesson.png">
         </li>
         <li class="task">
-          <p>Math Centers</p>
+          <img id="math-centers" src="images/math-centers.png">
         </li>
         <li class="task">
-          <p>S.T.E.M.</p>
+          <img id="stem" src="images/stem.png">
         </li>
         <li class="task">
-          <p>Specials</p>
+          <img id="specials" src="images/specials.png">
         </li>
         <!-- <li class="task">
           <p>User Testing</p>
@@ -82,19 +88,19 @@
       </div> -->
       <ul class="task-list" id="done">
         <li class="task">
-          <p>Read Aloud</p>
+          <img id="read-aloud" src="images/read-aloud.png">
         </li>
         <li class="task">
-          <p>ELA Centers</p>
+          <img id="ela-centers" src="images/ela-centers.png">
         </li>
         <li class="task">
-          <p>Social Studies</p>
+          <img id="ss" src="images/ss.png">
         </li>
         <li class="task">
-          <p>Lunch</p>
+          <img id="lunch" src="images/lunch.png">
         </li>
         <li class="task">
-          <p>Recess</p>
+          <img id="recess" src="images/recess.png">
         </li>
       </ul>
     </li>
@@ -119,7 +125,18 @@
 
   </ul>
 </div>
-
+<script>
+  function showLiam(){
+    document.getElementById('vs-title').innerHTML="Liam's Visual Schedule";
+    document.getElementById('student-pic').src="images/liam.png";
+  }
+</script>
+<script>
+  function showJacobi(){
+    document.getElementById('vs-title').innerHTML="Jacobi's Visual Schedule";
+    document.getElementById('student-pic').src="images/coolest-kid.png";
+  }
+</script>
 <!-- <footer>
   <p>Built with <a href="https://github.com/bevacqua/dragula" target="_blank">Dragula</a> and Vanilla JS by <a href="http://nikkipantony.com" target="_blank">Nikki Pantony</a></p>
 </footer> -->

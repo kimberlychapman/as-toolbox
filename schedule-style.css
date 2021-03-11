@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:400,700|Roboto+Slab:400,700");
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+  font-family: 'verdanaregular';
+  src: url('verdana-webfont.woff2') format('woff2'),
+       url('verdana-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 :root {
   font-size: calc(0.5vw + 1vh);
@@ -50,7 +58,57 @@ a:hover {
   color: #000013;
   border-bottom: #0066aa 0.16rem solid;
 }
+#vs-title{
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top:3%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgb(0, 51, 204, 0.8);
+  height:70px;
+  width:900px;
+  /* border:solid 2px cyan; */
+  z-index: 2;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  font-size: 48pt;
+  font-family: 'Poppins', sans-serif;
+  /* letter-spacing: -15px; */
+}
 
+#vs-title:hover{
+  box-shadow:
+     inset 0 0 60px whitesmoke,
+     inset 20px 0 80px #00FF00,
+     inset -20px 0 80px #0ff,
+     inset 20px 0 300px #00FF00,
+     inset -20px 0 300px #0ff,
+     0 0 50px #fff,
+     -10px 0 80px #00FF00,
+     10px 0 80px #0ff;
+ }
+#student{
+  position:absolute;
+  top:15%;
+  left:75%;
+  /* margin-top:-3%; */
+}
+/* #student-pic{
+  width:320px;
+  height:820px;
+} */
 header,
 footer {
   width: 40rem;
@@ -74,7 +132,11 @@ footer {
 #visual-schedule{
   position:absolute;
   top:15%;
-  left:40%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   z-index:1;
 }
 .schedule-container {
@@ -162,14 +224,14 @@ li.schedule-column.done-column{
 li.schedule-column.to-do-column{
   position: absolute;
   top:15.9%;
-  left:45.5%;
+  left:40%;
   /* background-color: white; */
 }
 
 li.schedule-column.trash-column{
-  position:absolute;
+  position:fixed;
   top:54%;
-  left:59.65%;
+  left:53.95%;
   border:transparent;
 }
 
@@ -235,7 +297,21 @@ li.schedule-column.trash-column{
   text-align: center;
   vertical-align: middle;
 }
-
+#meeting,
+#math-lesson,
+#math-centers,
+#stem,
+#specials,
+#read-aloud,
+#ela-centers,
+#ss,
+#lunch,
+#recess
+{
+  height: 90px;
+  width:90px;
+  z-index:3;
+}
 #taskText {
   background: #fff;
   border: #000013 0.15rem solid;
@@ -304,10 +380,23 @@ li.schedule-column.trash-column{
   margin-left:10px;
   margin-top:17px;
   border-bottom: none;
-  color:black;
+  color: black;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
 }
 #toolbox-go:hover >#back{
-  color:blue;
+  color: rgb(0, 51, 204, 0.8);
 }
 #toolbox-go:hover >#toolbox-logo{
   -webkit-transform:scale(1.3);
