@@ -66,28 +66,6 @@
                 <!--Logo Default-->
                 <img src="images/ast-logo.png" alt="logo" class="logo-dark default">
             </a>
-
-            <!--Nav Links-->
-            <!-- <div class="collapse navbar-collapse" id="wexim">
-                <div class="navbar-nav ml-auto">
-                        <a class="nav-link scroll" href="#home">Home</a>
-                        <a class="nav-link scroll" href="#about">About</a>
-                        <a class="nav-link scroll" href="#team">Team</a>
-                        <a class="nav-link scroll" href="#portfolio">Work</a>
-                        <a class="nav-link scroll" href="#price">Pricing</a>
-                        <a class="nav-link scroll" href="#blog">Blog</a>
-                        <a class="nav-link scroll" href="#contact">Contact</a>
-                    <span class="menu-line"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                </div>
-            </div> -->
-
-            <!--Side Menu Button-->
-            <!-- <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a> -->
-
         </div>
     </nav>
 
@@ -223,7 +201,7 @@
     </div>
 </div>
 <div id="sick2">
-    <div id="sick1-inner"></div>
+    <div id="sick2-inner"></div>
         <img id="sick-2" src="images/nauseated.png">
         <div id="sick-text2">Throw up</div>
     </div>
@@ -240,13 +218,11 @@
     </div>
 </div>
 <div id="sick5">
-    <!-- <div id="sick5-inner"></div> -->
         <img id="sick-5" src="images/throat.png">
         <div id="sick-text5">Sore throat</div>
     </div>
 </div>
 <div id="sick6">
-    <!-- <div id="sick5-inner"></div> -->
         <img id="sick-6" src="images/tummy.png">
         <div id="sick-text6">Tummy ache</div>
     </div>
@@ -348,6 +324,12 @@
         <div id="tool8-text">Help</div>
     </div>
 </div>
+<div id="tool9">
+    <div id="tool9-inner">
+        <img id="tool9-pic" src="images/school-nurse.png">
+        <div id="tool9-text">Nurse</div>
+    </div>
+</div>
 <div id="eraser" onclick="clearBoard()">
     <img id="erase" src="images/eraser.png">
 </div>
@@ -357,52 +339,37 @@
 <div id="better-display">
     <img id="get-better" src="images/get-better.png">
 </div>
+<div id="confused1">
+    <div id="confused1-text"><span id="open-need">Need</span> help?</div>
+    <img id="help-me" src="images/need_help.png">
+</div>
+<div id="confused2"><span id="open-need">Need</span>&nbsp something else?</div>
 <div id="option1"><span id="open-need">Need</span> something?</div>
 <div id="option2"><span style="text-transform:uppercase; font-weight:bold;">Explain</span> and <span style="text-transform: uppercase; font-weight:bold;">Plan</span></div>
 <div id="inhaler" onclick="stopPulse()" ondblclick="startPulse()">
     <div id="inhaler-inner">
         <img id="inhaler-pic" src="images/asthma.png">
-        <!-- <div id="inhaler-text">Inhaler</div> -->
     </div>
 </div>
+<div id="inhaler-alert">
+    <img id="alert" src="images/alert.png">
+    <div id="alert-text">Alert!</div>
+</div>
+
 <!-- Self Regulation Needs End -->
 
 <script>
     function toggleSwitch1(){
     var checkBox = document.getElementById("switch1");
-    // var tool1 = document.getElementById('tool1');
-    // var tool2 = document.getElementById('tool2');
-    // var tool3 = document.getElementById('tool3');
-    // var tool4 = document.getElementById('tool4');
-    // var choice = document.getElementById('choice');
     var emotion = document.getElementById('emotion');
     var emotion2 = document.getElementById('emotion2');
     var emotion3 = document.getElementById('emotion3');
     var emotion4 = document.getElementById('emotion4');
     var emotion5 = document.getElementById('emotion5');
     var emotion6 = document.getElementById('emotion6');
-    // var need1= document.getElementById('i-need1');
-    // var need3 = document.getElementById('i-need3');
-    // var need4 = document.getElementById('i-need4');
-    // var need5 = document.getElementById('i-need5');
-    // var hurts = document.getElementById('hurts');
     var needTitle = document.getElementById('i-need-my');
     var ifeel = document.getElementById('i-feel');
     var bodyfeels = document.getElementById('body-feels');
-    // var sick1 = document.getElementById('sick1');
-    // var sick2 = document.getElementById('sick2');
-    // var sick3 = document.getElementById('sick3');
-    // var sick4 = document.getElementById('sick4');
-    // var sick5 = document.getElementById('sick5');
-    // var sick6 = document.getElementById('sick6');
-    // var head = document.getElementById('head-hurts')
-    // var neck = document.getElementById('neck-hurts')
-    // var back = document.getElementById('back-hurts')
-    // var tummy = document.getElementById('tummy-hurts')
-    // var arm = document.getElementById('arm-hurts')
-    // var leg = document.getElementById('leg-hurts')
-    // var hand = document.getElementById('hand-hurts')
-    // var foot = document.getElementById('foot-hurts')
 
     if (checkBox.checked == true){
       emotion.style.display= "flex";
@@ -465,9 +432,6 @@
       need4.style.display="flex";
       need5.style.display="flex";
       hurts.style.display="flex";
-    //   needTitle.style.display="none";
-    //   ifeel.style.display="none";
-    //   bodyfeels.style.display="none";
     }
     else{
       need1.style.display="none";
@@ -509,37 +473,11 @@
     var tool6 = document.getElementById('tool6');
     var tool7 = document.getElementById('tool7');
     var tool8 = document.getElementById('tool8');
+    var tool9 = document.getElementById('tool9');
     var choice = document.getElementById('choice');
-    // var emotion = document.getElementById('emotion');
-    // var emotion2 = document.getElementById('emotion2');
-    // var emotion3 = document.getElementById('emotion3');
-    // var emotion4 = document.getElementById('emotion4');
-    // var emotion5 = document.getElementById('emotion5');
-    // var emotion6 = document.getElementById('emotion6');
-    // var need1= document.getElementById('i-need1');
-    // var need3 = document.getElementById('i-need3');
-    // var need4 = document.getElementById('i-need4');
-    // var need5 = document.getElementById('i-need5');
-    // var hurts = document.getElementById('hurts');
     var needTitle = document.getElementById('i-need-my');
     var ifeel = document.getElementById('i-feel');
     var bodyfeels = document.getElementById('body-feels');
-    // var sick1 = document.getElementById('sick1');
-    // var sick2 = document.getElementById('sick2');
-    // var sick3 = document.getElementById('sick3');
-    // var sick4 = document.getElementById('sick4');
-    // var sick5 = document.getElementById('sick5');
-    // var sick6 = document.getElementById('sick6');
-
-    // var head = document.getElementById('head-hurts')
-    // var neck = document.getElementById('neck-hurts')
-    // var back = document.getElementById('back-hurts')
-    // var tummy = document.getElementById('tummy-hurts')
-
-    // var arm = document.getElementById('arm-hurts')
-    // var leg = document.getElementById('leg-hurts')
-    // var hand = document.getElementById('hand-hurts')
-    // var foot = document.getElementById('foot-hurts')
 
     if (checkBox.checked == true){
       tool1.style.display = "flex";
@@ -550,37 +488,8 @@
       tool6.style.display = "flex";
       tool7.style.display = "flex";
       tool8.style.display = "flex";
-    //   emotion.style.display= "none";
-    //   emotion2.style.display= "none";
-    //   emotion3.style.display= "none";
-    //   emotion4.style.display= "none";
-    //   emotion5.style.display= "none";
-    //   emotion6.style.display= "none";
-    //   choice.style.display="block";
-    //   choice.innerHTML="I Need";
-    //   need1.style.display="none";
-    //   need3.style.display="none";
-    //   need4.style.display="none";
-    //   need5.style.display="none";
-    //   hurts.style.display="none";
-    //   needTitle.style.display="none";
-    //   ifeel.style.display="none";
-    //   bodyfeels.style.display="none";
-    //   sick1.style.display="none";
-    //   sick2.style.display="none";
-    //   sick3.style.display="none";
-    //   sick4.style.display="none";
-    //   sick5.style.display="none";
-    //   sick6.style.display="none";
-
-    //   head.style.display="none";
-    //   neck.style.display="none";
-    //   back.style.display="none";
-    //   tummy.style.display="none";
-    //   arm.style.display="none";
-    //   leg.style.display="none";
-    //   hand.style.display="none";
-    //   foot.style.display="none";
+      tool9.style.display = "flex";
+    
     }
     else{
       tool1.style.display="none";
@@ -591,33 +500,8 @@
       tool6.style.display = "none";
       tool7.style.display = "none";
       tool8.style.display = "none";
-    //   emotion2.style.display= "none";
-    //   emotion3.style.display= "none";
-    //   emotion4.style.display= "none";
-    //   emotion5.style.display= "none";
-    //   emotion6.style.display= "none";
-    //   choice.style.display="none";
-    //   choice.innerHTML="My Choice";
-    //   need1.style.display="none";
-    //   need3.style.display="none";
-    //   need4.style.display="none";
-    //   need5.style.display="none";
-    //   hurts.style.display="none";
-    //   sick1.style.display="none";
-    //   sick2.style.display="none";
-    //   sick3.style.display="none";
-    //   sick4.style.display="none";
-    //   sick5.style.display="none";
-    //   sick6.style.display="none";
-
-    //   head.style.display="none";
-    //   neck.style.display="none";
-    //   back.style.display="none";
-    //   tummy.style.display="none";
-    //   arm.style.display="none";
-    //   leg.style.display="none";
-    //   hand.style.display="none";
-    //   foot.style.display="none";
+      tool9.style.display = "none";
+    
 
       needTitle.style.display="block";
       ifeel.style.display="block";
@@ -625,43 +509,6 @@
     }
   }
 </script>
-
-
-
-<!-- <div class="button button-1">Neon</div> -->
-<!-- <ul id="placeholder">
-    <li>Help</li>
-    <li>Headphones</li>
-    <li>Movement Break</li>
-    <li>Calm Corner</li>
-    <li>Timer</li>
-    <li>Material ex. pencil</li>
-</ul> -->
-<!-- <div id="social">
-    <span style="font-weight: bold;">Personalized Social Stories:</span>
-    <br>
-    <br>
-    User uploads their photo, and photos of the other people in their lives that are part of the social stories (i.e. parent/guardian, siblings, teacher, etc)
-    to strengthen the social story narratives.
-</div>
-<div id="schedule">Personalized Visual Schedule</div>
-<div id="prize">
-    <span style="font-weight: bold;">Personalized Reward Center:</span>
-    <br>
-    <br>
-    User can choose from preloaded pictures and/or take pictures of the items they receive as rewards/incentives and can add them to their "prize bin" as they earn through out the day.
-</div> -->
-
-<!-- <script>
-    function feelingsTitle(){
-        document.getElementById('i-feel').style.display="block";
-    }
-</script>
-<script>
-    function noMoreTitle(){
-        document.getElementById('i-feel').style.display="none";
-    }
-</script> -->
 <script>
     function bodyTitle(){
         document.getElementById('body-feels').style.display="block";
@@ -954,7 +801,9 @@
     function confusedEffect(){
         document.getElementById('emotion5').style.webkitTransition="all .15s ease-in-out";
         document.getElementById('emotion5').style.transition="all .15s ease-in-out";
-        document.getElementById('emotion5').style.boxShadow="0 0 10px 0 #8a2be2 inset, 0 0 20px 2px #8a2be2";
+        document.getElementById('emotion5').style.boxShadow="0 0 10px 0 #3333ff inset, 0 0 20px 2px #3333ff";
+        document.getElementById('confused1').style.display="flex";
+        document.getElementById('confused2').style.display="flex";
     }
 </script>
 <script>
@@ -962,6 +811,7 @@
         document.getElementById('emotion6').style.webkitTransition="all .15s ease-in-out";
         document.getElementById('emotion6').style.transition="all .15s ease-in-out";
         document.getElementById('emotion6').style.boxShadow="0 0 20px 0 #3baff7 inset, 0 0 20px 2px #3baff7";
+        document.getElementById('option1').style.display="block";
     }
 </script>
 <script>
@@ -970,6 +820,7 @@
         document.getElementById('i-need1').style.transition="all .15s ease-in-out";
         document.getElementById('i-need1').style.boxShadow="0 0 20px 0 #ff4500 inset, 0 0 20px 2px #ff4500";
         document.getElementById('inhaler').style.display="flex";
+        document.getElementById('inhaler-alert').style.display="flex";
     }
 </script>
 <script>
@@ -997,6 +848,7 @@
         document.getElementById('i-need1').style.transition="none";
         document.getElementById('i-need1').style.boxShadow="none";
         document.getElementById('inhaler').style.display="none";
+        document.getElementById('inhaler-alert').style.display="none";
 
 
         document.getElementById('happy-display').style.display="none";
@@ -1005,19 +857,27 @@
         document.getElementById('option2').style.display="none";
         document.getElementById('inhaler').style.display="none";
 
+        document.getElementById('confused1').style.display="none";
+        document.getElementById('confused2').style.display="none";
+
     }
 </script>
 <script>
     function stopPulse(){
       document.getElementById('inhaler').style.webkitAnimation="none";
+      document.getElementById('inhaler-alert').style.webkitAnimation="none";
     }
   </script>
     <script>
       function startPulse(){
         document.getElementById('inhaler').style.webkitAnimation= "pulse 1.5s infinite";
+        document.getElementById('inhaler-alert').style.webkitAnimation= "pulse 1.5s infinite";
       }
     </script>
 
+<a id="schedule-btn" href="index-schedule.html">
+    <img id="go-schedule" src="images/button.png">
+</a>
 
 <section id="home" class="p-0 dark-slider single-slide">
     <h2 class="d-none">hidden</h2>
