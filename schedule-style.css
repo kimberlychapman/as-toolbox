@@ -420,5 +420,5 @@ li.schedule-column.trash-column{
   width:55px;
   height:58px;
   margin-left:-2.5px;
-  margin-top:-1.5px;
+  /* margin-top:-1.5px; */
 }
