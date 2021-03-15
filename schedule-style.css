@@ -23,6 +23,7 @@ body {
   min-width: 420px;
   background-image: url('images/transparent-bg.png');
   background-size: cover;
+  overflow-x: hidden;
 }
 
 h1,
@@ -422,3 +423,4 @@ li.schedule-column.trash-column{
   margin-left:-2.5px;
   /* margin-top:-1.5px; */
 }
+
