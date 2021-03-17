@@ -19,7 +19,7 @@
                         document.getElementById('add').click()">
   <button id="add" class="button add-button" onclick="addTask()">Add New Task</button>
 </div> -->
-<div id="vs-title" onclick="showLiam()" ondblclick="showJacobi()">Jacobi's Visual Schedule</div>
+<div id="vs-title" onclick="showJacobi()" ondblclick="showAidan()" >Gabriel's Visual Schedule</div>
 <!-- <div class="button">Or Click me</div> -->
 <div id="reload" onclick="refreshPage()">
   <img id="reload-icon" src="images/refresh.png">
@@ -32,7 +32,7 @@
   <img id="my-schedule" src="images/the-schedule.png">
 </div>
 <div id="student">
-  <img id="student-pic" src="images/coolest-kid.png">
+  <img id="student-pic" src="images/aidan.png">
 </div>
 <div class="schedule-container">
   <ul class="schedule-columns">
@@ -134,15 +134,16 @@
   }
   </script>
 <script>
-  function showLiam(){
-    document.getElementById('vs-title').innerHTML="Aidan's Visual Schedule";
-    document.getElementById('student-pic').src="images/aidan.png";
-  }
-</script>
-<script>
   function showJacobi(){
     document.getElementById('vs-title').innerHTML="Jacobi's Visual Schedule";
     document.getElementById('student-pic').src="images/coolest-kid.png";
+  }
+</script>
+
+<script>
+  function showAidan(){
+    document.getElementById('vs-title').innerHTML="Gabriel's Visual Schedule";
+    document.getElementById('student-pic').src="images/aidan.png";
   }
 </script>
 <!-- <footer>

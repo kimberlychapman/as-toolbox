@@ -119,6 +119,14 @@
 
 <!-- <div id="choice">My Choice</div> -->
 <!-- Emotional Needs -->
+<div id="login" onclick="signIn()" ondblclick="signOut()">
+    <img id="avatar" src="images/superman.png">
+</div>
+<div id="login-dropdown">
+    <div id="account-settings">Account</div>
+    <div id="app-settings">Settings</div>
+    <div id="logout">Logout</div>
+</div>
 <div id="holder1">
     <input type="checkbox" id="switch1" onclick="toggleSwitch1()"/><label for="switch1">Toggle</label>
 </div>
@@ -159,6 +167,17 @@
         <div id="emotion-text6">Tired</div>
     </div>
 </div>
+<script>
+    function signIn(){
+        document.getElementById('login-dropdown').style.display="flex";
+    }
+</script>
+<script>
+    function signOut(){
+        document.getElementById('login-dropdown').style.display="none";
+    }
+
+</script>
 <!-- Emotional Needs End-->
 <!-- Body Needs -->
 <div id="my-body">
@@ -910,7 +929,7 @@
                          data-paddingright="[0,0,0,0]"
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[100,100,100,100]"
-                         style="z-index: 5;border-width:0px;"><img src="images/social-story.png" alt="" data-ww="['650px','650px','650px','650px']" data-hh="['500px','500px','500px','500px']" width="650" height="500" data-no-retina> </div>
+                         style="z-index: 5;border-width:0px;"><img id="my-ss" src="images/aidan-story.png" alt="" data-ww="['650px','650px','650px','650px']" data-hh="['500px','500px','500px','500px']" width="650" height="500" data-no-retina> </div>
 
                     <!-- layer nr. 2 -->
                     <div class="tp-caption tp-resizeme rs-parallaxlevel-15"
@@ -1037,7 +1056,7 @@
                          data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                          data-start="1000" data-splitin="none" data-splitout="none">
                         <h2>Welcome to</h2>
-                        <img id="test" src="images/ray-warrior.png" onclick="jacobiRecess()" ondblclick="jacobiClass()">
+                        <img id="test" src="images/boy.png" onclick="jacobiRecess()" ondblclick="jacobiClass()">
                     </div>
 
                     <div class="tp-caption tp-resizeme"
@@ -1081,12 +1100,16 @@
 
 <script>
     function jacobiRecess(){
-        document.getElementById('test').src="images/boy.png";
+        document.getElementById('test').src="images/ray-warrior.png";
+        document.getElementById('my-ss').src="images/social-story.png";
+        document.getElementById('avatar').src="images/blackpanther.png";
     }
 </script>
 <script>
     function jacobiClass(){
-        document.getElementById('test').src="images/ray-warrior.png";
+        document.getElementById('test').src="images/boy.png";
+        document.getElementById('my-ss').src="images/aidan-story.png";
+        document.getElementById('avatar').src="images/superman.png";
     }
 </script>
  <!--scroll down-->
