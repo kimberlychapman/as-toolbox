@@ -6449,6 +6449,7 @@ input[type=checkbox] {
       justify-content: center;
       align-items: center;
       margin-top:1px;
+      box-shadow: 0 8px 6px -6px black;
       /* margin-left:1.5px; */
   }
   #account-settings:hover,

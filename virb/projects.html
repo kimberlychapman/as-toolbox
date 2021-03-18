@@ -76,6 +76,7 @@
   </section> -->
   <!-- END: slider  -->
 <div id="my-stories">Gabriel's Social Stories</div>
+<div id="topper"></div>
   <section class="probootstrap-section">
     <div class="container" style="margin-top:50px;">
       <div class="row">
@@ -257,11 +258,30 @@
 
       </div>
     </div>
+  <div id="login" onclick="signIn()" ondblclick="signOut()">
+      <img id="avatar" src="../images/superman.png">
+  </div>
+  <div id="login-dropdown">
+      <div id="account-settings">Account</div>
+      <div id="app-settings">Settings</div>
+      <div id="logout">Logout</div>
+  </div>
     <a id="toolbox-go" href="../index.html">
       <img id="toolbox-logo" src="../images/as_puzzle.png">
       <div id="back">Home</div>
     </a>
   </section>
+  <script>
+    function signIn(){
+        document.getElementById('login-dropdown').style.display="flex";
+    }
+</script>
+<script>
+    function signOut(){
+        document.getElementById('login-dropdown').style.display="none";
+    }
+
+</script>
   <!-- END section -->
 
   <!-- <section class="probootstrap-section probootstrap-section-lighter">

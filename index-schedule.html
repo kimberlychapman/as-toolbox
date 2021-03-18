@@ -19,6 +19,8 @@
                         document.getElementById('add').click()">
   <button id="add" class="button add-button" onclick="addTask()">Add New Task</button>
 </div> -->
+
+<div id="topper"></div>
 <div id="vs-title" onclick="showJacobi()" ondblclick="showAidan()" >Gabriel's Visual Schedule</div>
 <!-- <div class="button">Or Click me</div> -->
 <div id="reload" onclick="refreshPage()">
@@ -28,6 +30,25 @@
   <img id="toolbox-logo" src="images/as_puzzle.png">
   <div id="back">Home</div>
 </a>
+<div id="login" onclick="signIn()" ondblclick="signOut()">
+  <img id="avatar" src="images/superman.png">
+</div>
+<div id="login-dropdown">
+  <div id="account-settings">Account</div>
+  <div id="app-settings">Settings</div>
+  <div id="logout">Logout</div>
+</div>
+<script>
+  function signIn(){
+      document.getElementById('login-dropdown').style.display="flex";
+  }
+</script>
+<script>
+  function signOut(){
+      document.getElementById('login-dropdown').style.display="none";
+  }
+
+</script>
 <div id="visual-schedule">
   <img id="my-schedule" src="images/the-schedule.png">
 </div>
@@ -137,6 +158,7 @@
   function showJacobi(){
     document.getElementById('vs-title').innerHTML="Jacobi's Visual Schedule";
     document.getElementById('student-pic').src="images/coolest-kid.png";
+    document.getElementById('avatar').src="images/blackpanther.png";
   }
 </script>
 
@@ -144,6 +166,7 @@
   function showAidan(){
     document.getElementById('vs-title').innerHTML="Gabriel's Visual Schedule";
     document.getElementById('student-pic').src="images/aidan.png";
+    document.getElementById('avatar').src="images/superman.png";
   }
 </script>
 <!-- <footer>
