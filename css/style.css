@@ -6458,4 +6458,24 @@ input[type=checkbox] {
       opacity:0.5;
   }
 
+#reward{
+    position:absolute;
+    top:52.5%;
+    left:81%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    height:80px;
+    width:200px;
+    color:black;
+    z-index:3;
+    /* border:2px solid lime; */
+    text-align: center;
+    padding-top:10px;
+    border: inset 2px black;
+    /* border-image-source: linear-gradient(to bottom, #DCDCDC 0%, #000000 100%);
+    border: 5px inset;
+    border-image-slice: 1;
+    border-width: 5px; */
+
+}
   
