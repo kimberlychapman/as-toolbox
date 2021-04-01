@@ -5022,7 +5022,7 @@ ul.count_down.white li p:nth-child(2) {
 #close-sick{
     position:absolute;
     top:53%;
-    left:40.75%;
+    left:24%;
     height:35px;
     width:35px;
     /* border:2px solid lime; */
@@ -5032,7 +5032,7 @@ ul.count_down.white li p:nth-child(2) {
 #close-hurts{
     position:absolute;
     top:53%;
-    left:40.75%;
+    left:22.5%;
     height:35px;
     width:35px;
     /* border:2px solid lime; */
