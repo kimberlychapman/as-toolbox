@@ -72,16 +72,22 @@ a {
   transition: left 0.3s ease;
 }
 
-#people{
+#people,
+#my-places,
+#reward-pics{
 display:flex;
 flex-direction: column;
 width:1500px;
 height:550px;
-border:inset 5px aqua;
+/* border:inset 5px aqua; */
 }
 
 #school,
-#fam{
+#fam,
+#classes,
+#outside,
+#rewards1,
+#rewards2{
   display:flex;
   flex-direction:row;
   padding:10px;
@@ -100,41 +106,171 @@ border:inset 5px aqua;
 #ot,
 #mom,
 #dad,
-#sis{
+#sis,
+#friend,
+#classmates,
+#my-school,
+#hr,
+#aud,
+#cafeteria,
+#playground,
+#bus,
+#fieldtrip,
+#vacation,
+#free,
+#action,
+#swedish,
+#erase-art,
+#bey,
+#robot,
+#message,
+#lego{
+  display:flex;
+  flex-direction: column;
   height:200px;
   width:200px;
-  border:dashed 3px magenta;
+  border:inset 2px black;
   margin-left:15px;
   margin-right:15px;
 }
 #g-mom,
 #g-dad{
-  height:182px;
-  width:150px;
+  height:172px;
+  width:140px;
+  margin-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#g-mom{
+  height:172px;
+  width:140px;
+  margin-top:10px;
+}
+.description{
+  height:20px;
+  width:190;
+  font-size: 12pt;
+  text-align: center;
+  color:black;
+}
+.description2{
+  height:20px;
+  width:190;
+  font-size: 12pt;
+  text-align: center;
+  color:black;
+  margin-top:15px;
+}
+.description3{
+  height:20px;
+  width:190;
+  font-size: 12pt;
+  text-align: center;
+  color:black;
   margin-top:10px;
 }
 #ava{
-  height:170px;
-  width:150px;
+  height:165px;
+  width:145px;
   margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
 }
 #hr-teacher{
-  height:197px;
-  width:180px;
+  height:172px;
+  width:155px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
 }
 
 #dl-teacher,
 #speech-path,
 #social,
 #o-t{
-  height:197px;
-  width:170px;
+  height:172px;
+  width:145px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
 }
-
+#class-friend{
+  height:175px;
+  width:185px;
+  margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
+}
 #social{
-  height:194px;
+  height:174px;
+  width:150px;
+  /* margin-top:3px; */
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+}
+#students,
+#free-choice{
+  height:130px;
+  width:190px;
+  margin-top:35px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#school-building,
+#homeroom,
+#auditorium,
+#lunchroom{
+  height:165px;
+  width:190px;
+  margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#recess,
+#museum,
+#disney,
+#action-figures,
+#dry-erase-art,
+#robot-build{
+  height:150px;
+  width:190px;
+  margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#schoolbus{
+  height:165px;
   width:170px;
-  margin-top:3px;
+  margin-top:13px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#swedish-fish{
+  height:165px;
+  width:160px;
+  margin-top:13px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:5px;
+}
+#beyblade,
+#message-home,
+#lego-yeah{
+  height:150px;
+  width:190px;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+#robot-kit{
+  height:130px;
+  width:190px;
+  margin-top:35px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:7.5px;
 }
 #toolbox-go{
   position:absolute;
