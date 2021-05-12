@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700');
+
+
+.main-font{font-family: 'Roboto', sans-serif;}
+.alt-font{font-family: 'Poppins', sans-serif;}
+
+body{
+    background-image:url("../images/winner.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height:100%;
+    /* background-position: center center; */
+}
+.home{
+    position:fixed;
+    top:0.5%;
+    left:0.5%;
+    z-index:2;
+    height:100px;
+    width:100px;
+    /* border:solid 2px lime; */
+    display:flex;
+    flex-direction:row;
+    text-decoration: none;
+}
+#home{
+    height:85px;
+    width:70.55px;
+}
+#back{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size:18pt;
+    text-decoration: none;
+    margin-left:5px;
+    margin-top:25px;
+}
+.home:hover{
+    text-decoration: underline;
+    color:black;
+}
+.btn-row{
+    display:flex;
+    flex-direction:row;
+    height:50px;
+    width:100%;
+    /* border:dashed 2px blue; */
+    justify-content: center;
+    align-items: center;
+}
+#reward-title{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size:16pt;
+    text-align:center;
+}
+.reward-img img{
+    height:100px;
+    width:140px;
+}
+#swedish{
+    height:100px;
+    width:80px;
+}
+.cart-row{
+    display: flex;
+    flex-direction: row;
+   margin-left:120px;
+    height:50px;
+    width:100px;
+    /* border:2px solid orangered; */
+   
+}
+#shop img{
+    width:40px;
+    height:36px;
+    float:right;
+
+
+}
+#plus,
+#plus2,
+#plus3,
+#plus4{
+    height:40px;
+    width:40px;
+    margin-left:10px;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size:18pt;
+    /* border:solid 2px black; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#counter,
+#counter2,
+#counter3,
+#counter4{
+    height:50px;
+    width:50px;
+    /* border:solid 2px black; */
+    text-align: center;
+    height:40px;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size:18pt;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#counter,
+#counter2,
+#counter3,
+#counter4{
+margin-left:140px;
+height:50px;
+width:50px;
+/* border:solid 2px black; */
+text-align: center;
+height:40px;
+line-height: 40px;
+font-family: 'Poppins', sans-serif;
+color:black;
+font-size:18pt;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#minus,
+#minus2,
+#minus3,
+#minus4{
+    /* position:absolute;
+    top:1%;
+    left:13%; */
+    height:40px;
+    width:40px;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size:18pt;
+    /* border:solid 2px black; */
+    margin-right:20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.rewards{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width:85%;
+    /* border:solid 2px magenta; */
+    height:250px;
+    margin-left: 7.5%;
+    margin-top:150px;
+}
+#reward1,
+#reward2,
+#reward3,
+#reward4{
+    display: flex;
+    flex-direction:column;
+    height:220px;
+    width:15%;
+    background-color: rgb(250,250,250, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:5px;
+    font-family: 'Poppins', sans-serif;
+    font-size:16pt;
+    justify-content: center;
+    align-items: center;
+    margin-left:50px;
+    /* margin-right:50px; */
+    /* margin-left:50px; */
+}
+
+.shopping-list{
+    position: absolute;
+    top:1%;
+    left:87%;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(250,250,250, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:5px;
+    font-family: 'Poppins', sans-serif;
+    font-size:12pt;
+    display:flex;
+    flex-direction:column;
+}
+#checkout{
+    position:absolute;
+    top:90%;
+    left:32%;
+    font-family: 'Poppins', sans-serif;
+    /* margin-left:auto;
+    margin-right:auto; */
+    /* margin-top:200px; */
+}
