@@ -19,7 +19,6 @@
 	<div id="card">
     <img src="images/gold-credit.png">
   </div>
-
     <div class="header"></div>
   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
   <label for="openSidebarMenu" class="sidebarIconToggle">
@@ -32,42 +31,58 @@
   <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
         <ul id="cart">
+            <div id="your-cart">Your Shopping Cart</div>
             <li id="free">
                 <div id="title2">Ghost</div>
                 <div id="counter1">0</div>
             </li>
-            <li id="bey">
-                <div id="title">BeyBlade</div>
-                <div id="counter2">0</div>
-            </li>
-            <li id="action">
-              <div id="title3">Action Figures</div>
-              <div id="counter3">0</div>
-            </li>
-            <li id="dry-erase">
-              <div id="title4">Dry-Erase Art</div>
-              <div id="counter4">0</div>
-            </li>
-            <li id="lego">
-              <div id="title5">Legos</div>
-              <div id="counter5">0</div>
-            </li>
+     
             <li id="choice">
+              <div id="prize-pic"><img src="images/free-choice.png"></div>
               <div id="title6">Free Choice</div>
               <div id="counter6">0</div>
             </li>
             <li id="tablet">
+              <div id="prize-pic"><img src="images/ipad.png"></div>
               <div id="title9">Tablet Time</div>
               <div id="counter9">0</div>
             </li>
             <li id="fish">
+              <div id="prize-pic"><img src="images//swedish2.png"></div>
               <div id="title7">Swedish Fish</div>
               <div id="counter7">0</div>
             </li>
             <li id="robots">
+              <div id="prize-pic"><img src="images/robot-time.png"></div>
               <div id="title8">Robotics Time</div>
               <div id="counter8">0</div>
             </li>
+            <li id="dry-erase">
+              <div id="prize-pic"><img src="images/dry-erase-art.png"></div>
+              <div id="title4">Dry-Erase Art</div>
+              <div id="counter4">0</div>
+            </li>
+            <div id="checkout">Checkout</div>
+            <li id="bey">
+                <div id="prize-pic"><img src="images/bey.png"></div>
+                <div id="title">BeyBlade</div>
+                <div id="counter2">0</div>
+            </li>
+            <li id="lego">
+              <div id="prize-pic"><img src="images/lego-hero.png"></div>
+              <div id="title5">Lego Set</div>
+              <div id="counter5">0</div>
+            </li>
+            <li id="action">
+              <div id="prize-pic"><img src="images/action-figures.png"></div>
+              <div id="title3">Action Figures</div>
+              <div id="counter3">0</div>
+            </li>
+            <div id="add-later">Earn Towards</div>
+            <div id="trash" onclick="refreshPage()">
+              <div id="empty">Empty Cart</div>
+              <img src="images/delete.png">
+            </div>
            
         </ul>
       <!-- <li id="action">
@@ -82,6 +97,7 @@
 
   </div> -->
 <!-- <div id="item1"></div> -->
+<!-- <div id="explain">This will show their Point Sheet on click</div> -->
 <div class="reward-ghost">
   <button id="plus1">+</button>
   <button id="minus1">-</button>

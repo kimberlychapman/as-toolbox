@@ -374,27 +374,138 @@
 #cart{
     display: flex;
     flex-direction: column;
-    height:300px;
+    height:350px;
     width:270px;
     font-family: 'Poppins', sans-serif;
     color:black;
     font-size:18pt;
     /* border:solid 2px black; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
+#checkout{
+    display:flex;
+    justify-content: center;
+    height:40px;
+    width:90%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #d99f0d;
+    font-size: 16pt;
+    text-align: center;
+    padding-inline-start: 0px;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#your-cart{
+    height:40px;
+    width:90%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size:18pt;
+    margin-bottom:10px;
+    margin-top:10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    line-height: 40px;
+    /* display: flex; */
+}
+#add-later{
+    display:flex;
+    justify-content: center;
+    height:40px;
+    width:90%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #d99f0d;
+    font-size: 16pt;
+    text-align: center;
+    padding-inline-start: 0px;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+#trash{
+    height:40px;
+    width:90%;
+    font-family: 'Poppins', sans-serif;
+    /* text-align: center; */
+    font-size:16pt;
+    /* margin-bottom:10px; */
+    margin-top:10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    /* line-height: 60px; */
+    display:flex;
+    flex-direction: row;
+    /* display: flex; */
+}
+#empty{
+    height:40px;
+    width:60%;
+    margin-right:10px;
+    margin-top:10px;
+    /* line-height: 60px; */
+}
+#trash img{
+    height:40px;
+    width:29px;
+}
+/* #add-later{
+    height:60px;
+    width:90%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size:16pt;
+    margin-bottom:10px;
+    margin-top:10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    line-height: 60px;
+} */
+#prize-pic img{
+    height:50px;
+    width:74px;
+    margin-right:5px;
+    /* border:solid 2px magenta; */
 
+}
 #bey{
     display: none;
     padding:0px;
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:solid 1px lightgray; */
+}
+#bey #title,
+#lego #title5,
+#choice #title6,
+#tablet #title9,
+#fish #title7{
+    /* margin-top:15px; */
+    line-height: 60px;
+    /* border:solid 2px lime; */
+    margin-left:8px;
 }
 
+#action #title3,
+#dry-erase #title4,
+#robots #title8{
+    /* margin-top:15px; */
+    /* line-height: 60px; */
+    /* border:solid 2px lime; */
+    margin-left:8px;
+}
+#choice #prize-pic img{
+    margin-top:5px;
+}
+#tablet #prize-pic img,
+#fish #prize-pic img{
+    height:60px;
+    width:48px;
+    margin-right:26px;
+}
 #free{
     display: none;
     padding:0px;
@@ -413,10 +524,10 @@
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:2px inset black; */
 }
 #dry-erase{
     display: none;
@@ -424,10 +535,10 @@
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:2px inset black; */
 }
 
 #lego{
@@ -436,10 +547,10 @@
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:2px inset black; */
 }
 #lego{
     display: none;
@@ -447,10 +558,10 @@
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:2px inset black; */
 }
 #choice{
     display: none;
@@ -458,10 +569,10 @@
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:2px inset black; */
 }
 
 #fish{
@@ -470,10 +581,10 @@
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:2px inset black; */
 }
 
 #robots{
@@ -482,10 +593,10 @@
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:2px inset black; */
 }
 #tablet{
     display: none;
@@ -493,10 +604,10 @@
     justify-content: center;
     flex-direction: row;
     height:60px;
-    width:90%;
+    width:95%;
     font-family: 'Poppins', sans-serif;
     margin-bottom:5px;
-    border:2px inset black;
+    /* border:2px inset black; */
 }
 
 #title,
@@ -704,3 +815,14 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin-top: -9px;
     display: block;
 }
+#point-sheet{
+    position: absolute;
+    top:30%;
+    left:8%;
+    height:100px;
+    width:100px;
+    z-index:3;
+    background-color: green;
+}
+
+  
