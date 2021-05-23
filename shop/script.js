@@ -225,3 +225,11 @@ document.getElementById('plus9').onclick = getCounter9();
 function refreshPage(){
     window.location.reload();
 }
+
+function showPoints(){
+    document.getElementById('point-box').style.display="block";
+}
+
+function hidePoints(){
+    document.getElementById('point-box').style.display="none";
+}
