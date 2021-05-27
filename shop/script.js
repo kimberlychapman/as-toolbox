@@ -233,3 +233,380 @@ function showPoints(){
 function hidePoints(){
     document.getElementById('point-box').style.display="none";
 }
+
+var total=[]
+function pointTotal()
+{
+    var firstcheck = document.getElementById('_checkbox');
+    var secondcheck =document.getElementById('_checkbox2');
+    var thirdcheck =document.getElementById('_checkbox3');
+    var fourthcheck = document.getElementById("_checkbox4");
+    var fifthcheck = document.getElementById("_checkbox5");
+    var sixthcheck = document.getElementById("_checkbox6");
+    var seventhcheck = document.getElementById("_checkbox7");
+    var eighthcheck = document.getElementById("_checkbox8");
+    var ninthcheck = document.getElementById("_checkbox9");
+    var tenthcheck = document.getElementById("_checkbox10");
+    var eleventhcheck = document.getElementById("_checkbox11");
+    var twelthcheck = document.getElementById("_checkbox12");
+    var thirteenthcheck = document.getElementById("_checkbox13");
+    var fourteenthcheck = document.getElementById("_checkbox14");
+    var fifteenthcheck = document.getElementById("_checkbox15");
+    var sixteenthcheck = document.getElementById("_checkbox16");
+    var seventeenthcheck = document.getElementById("_checkbox17");
+    var eighteenthcheck = document.getElementById("_checkbox18");
+    var nineteenthcheck = document.getElementById("_checkbox19");
+    var twentiethcheck = document.getElementById("_checkbox20");
+    var twentyfirstcheck = document.getElementById("_checkbox21");
+    var twentysecondcheck = document.getElementById("_checkbox22");
+    var twentythirdcheck = document.getElementById("_checkbox23");
+    var twentyfourthcheck = document.getElementById("_checkbox24");
+    var twentyfifthcheck = document.getElementById("_checkbox25");
+    var twentysixthcheck = document.getElementById("_checkbox26");
+    var twentyseventhcheck = document.getElementById("_checkbox27");
+    var twentyeighthcheck = document.getElementById("_checkbox28");
+    var twentyninthcheck = document.getElementById("_checkbox29");
+    var thirtiethcheck = document.getElementById("_checkbox30");
+    var thirtyfirstcheck = document.getElementById("_checkbox31");
+    var thirtysecondcheck = document.getElementById("_checkbox32");
+    var thirtythirdcheck = document.getElementById("_checkbox33");
+    var thirtyfourthcheck = document.getElementById("_checkbox34");
+    var thirtyfifthcheck = document.getElementById("_checkbox35");
+    var thirtysixthcheck = document.getElementById("_checkbox36");
+    var thirtyseventhcheck = document.getElementById("_checkbox37");
+    var thirtyeighthcheck = document.getElementById("_checkbox38");
+    var thirtyninthcheck = document.getElementById("_checkbox39");
+    var fortiethcheck = document.getElementById("_checkbox40");
+    var fortyfirstcheck = document.getElementById("_checkbox41");
+    var fortysecondcheck = document.getElementById("_checkbox42");
+    var fortythirdcheck = document.getElementById("_checkbox43");
+    var fortyfourthcheck = document.getElementById("_checkbox44");
+    var fortyfifthcheck = document.getElementById("_checkbox45");
+    var fortysixthcheck = document.getElementById("_checkbox46");
+    var fortyseventhcheck = document.getElementById("_checkbox47");
+    var fortyeighthcheck = document.getElementById("_checkbox48");
+    var fortyninthcheck = document.getElementById("_checkbox49");
+    var fiftiethcheck = document.getElementById("_checkbox50");
+    var fiftyfirstcheck = document.getElementById("_checkbox51");
+    var fiftysecondcheck = document.getElementById("_checkbox52");
+    var fiftythirdcheck = document.getElementById("_checkbox53");
+    var fiftyfourthcheck = document.getElementById("_checkbox54");
+
+
+    if (firstcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (secondcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (thirdcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (fourthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (fifthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (sixthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (seventhcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (eighthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (ninthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (tenthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (eleventhcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (twelthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (thirteenthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (fourteenthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (fifteenthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (sixteenthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (seventeenthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (eighteenthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (nineteenthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (twentiethcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (twentyfirstcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (twentysecondcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (twentythirdcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (twentyfourthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (twentyfifthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (twentysixthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (twentyseventhcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (twentyeighthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (twentyninthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (thirtiethcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (thirtyfirstcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (thirtysecondcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (thirtythirdcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (thirtyfourthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (thirtyfifthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (thirtysixthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (thirtyseventhcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (thirtyeighthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (thirtyninthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (fortiethcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (fortyfirstcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (fortysecondcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (fortythirdcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (fortyfourthcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (fortyfifthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (fortysixthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (fortyseventhcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (fortyeighthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+
+    if (fortyninthcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (fiftiethcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (fiftyfirstcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    if (fiftysecondcheck.checked){
+        total.push(parseInt(1, 10))
+    };
+    if (fiftythirdcheck.checked){
+        total.push(parseInt(2, 10))
+    };
+    if (fiftyfourthcheck.checked){
+        total.push(parseInt(3, 10))
+    };
+
+    console.log(total);
+    let earn = total.reduce(function (accumulator, currentValue){
+        return accumulator + currentValue
+    }, 0);
+    console.log(earn)
+    document.getElementById("add_points").innerHTML=earn;
+    };
+
+
+    // var toNumbers = total => total.map(Number);
+    // return toNumbers;
+
+
+
+// function totalPoints(){
+    // var firstcheck = document.getElementById('_checkbox');
+    // var secondcheck =document.getElementById('_checkbox2');
+    // var thirdcheck =document.getElementById('_checkbox3');
+    // if (firstcheck.checked){
+    //     total.push(firstcheck.value)};
+    // if (secondcheck.checked){
+    //     total.push(secondcheck.value)
+    
+    // };
+    // if (thirdcheck.checked){
+    //     total.push(thirdcheck.value)
+    // };
+//     return total;
+// }
+
+// submit.addEventListener("click", function(){
+//     var total =totalPoints();
+//     console.log(total);
+//     document.getElementById('add_points').innerHTML=total;
+// });
+
+// function totalPoints(){
+//     total = 0;
+//     add = 0;
+//     var firstcheck = document.getElementById("_checkbox");
+//     var secondcheck = document.getElementById("_checkbox2");
+//     var thirdcheck = document.getElementById("_checkbox3");
+    // var fourthcheck = document.getElementById("_checkbox4");
+    // var fifthcheck = document.getElementById("_checkbox5");
+    // var sixthcheck = document.getElementById("_checkbox6");
+
+    // var seventhcheck = document.getElementById("_checkbox7");
+    // var eighthcheck = document.getElementById("_checkbox8");
+    // var ninthcheck = document.getElementById("_checkbox9");
+
+    // var tenthcheck = document.getElementById("_checkbox10");
+    // var eleventhcheck = document.getElementById("_checkbox11");
+    // var twelthcheck = document.getElementById("_checkbox12");
+
+    // var thirteenthcheck = document.getElementById("_checkbox13");
+    // var fourteenthcheck = document.getElementById("_checkbox14");
+    // var fifteenththcheck = document.getElementById("_checkbox15");
+
+    // var sixteenthcheck = document.getElementById("_checkbox16");
+    // var seventeenthcheck = document.getElementById("_checkbox17");
+    // var eighteenthcheck = document.getElementById("_checkbox18");
+
+    // if (firstcheck.checked){
+    //     total += 1
+    // };
+    // if (secondcheck.checked){
+    //     total += 2
+    // };
+    // if (thirdcheck.checked){
+    //     total += 3
+    // }
+    // if (fourthcheck.checked){
+    //     total += 1
+    // };
+    // if (document.getElementById("_checked5").checked){
+    //     add += 2
+    // }
+    // if (document.getElementById("_checked6").checked){
+    //     add += 3
+    // }
+    // if (document.getElementById("_checked7").checked){
+    //     add += 1
+    // }
+    // if (document.getElementById("_checked8").checked){
+    //     add += 2
+    // }
+    // if (document.getElementById("_checked9").checked){
+    //     add += 3
+    // }
+    // if (document.getElementById("_checked10").checked){
+    //     add += 1
+    // }
+    // if (document.getElementById("_checked11").checked){
+    //     add += 2
+    // }
+    // if (document.getElementById("_checked12").checked){
+    //     add += 3
+    // }
+    // if (document.getElementById("_checked13").checked){
+    //     add += 1
+    // }
+    // if (document.getElementById("_checked14").checked){
+    //     add += 2
+    // }
+    // if (document.getElementById("_checked15").checked){
+    //     add += 3
+    // }
+    // if (document.getElementById("_checked16").checked){
+    //     add += 1
+    // }
+    // if (document.getElementById("_checked17").checked){
+    //     add += 2
+    // }
+    // if (document.getElementById("_checked18").checked){
+    //     add += 3
+    // }
+    
+//     document.getElementById('add_points').innerHTML=total;
+// }
+// totalPoints();
+
+
+// function totalPoints(){
+//     var inputs = document.getElementsByClassName('my_points'),
+//         total  = document.getElementById('add_points');
+    
+//      for (var i=0; i < inputs.length; i++) {
+//         inputs[i].onchange = function() {
+//             var add = this.value * (this.checked ? 1 : -1);
+//             total.innerHTML = parseFloat(total.innerHTML) + add
+//         }
+//       }
+//     }
+
+
+

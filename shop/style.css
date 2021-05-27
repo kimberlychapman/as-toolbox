@@ -4,14 +4,8 @@
 
 .main-font{font-family: 'Roboto', sans-serif;}
 .alt-font{font-family: 'Poppins', sans-serif;}
+/* Header */
 
-/* #item1{
-    position:absolute;
-    top:2%;
-    left:5%;
-    display: flex;
-    flex-direction: row;
-} */
 #header{
     /* z-index:1; */
     position:fixed;
@@ -101,6 +95,168 @@
     width:100px;
     /* opacity: 0.75; */
 }
+/* SideNav */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    /* background-color: #FC466B; */
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    top:1%;
+    right: 0;
+    width: 300px;
+    margin-top: 60px;
+    transform: translateX(300px);
+    transition: transform 300ms ease-in-out;
+    background-color: rgb(248, 248, 255);
+    /* background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%); */
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+/* .sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+} */
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    right: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color:rgb(0, 0, 0,0.7);
+}
+
+#cart-icon{
+    width:40px;
+    height:36px;
+    float:right;
+    margin-top:-20px;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+    background-color: transparent;
+}
+.diagonal.part-1 {
+    display: none;
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: right;
+    margin-right:260px;
+}
+.diagonal.part-2 {
+    display: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+    margin-top: 3px;
+    margin-right:260px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    /* opacity: 0; */
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+    display: block;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+    display: block;
+}
   .reward-section{
     display:flex;
     flex-direction: column;
@@ -110,6 +266,9 @@
     /* margin-left: 7.5%; */
     margin-top:200px;
 }
+
+/* Rewards */
+
 .reward-row{
     display:flex;
     flex-direction:row;
@@ -655,167 +814,7 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
-html, body {
-    overflow-x: hidden;
-    height: 100%;
-}
-body {
-    background: #fff;
-    padding: 0;
-    margin: 0;
-    font-family: 'Varela Round', sans-serif;
-}
-.header {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: none;
-    /* background-color: #FC466B; */
-    position: fixed;
-    height: 60px!important;
-    overflow: hidden;
-    z-index: 10;
-}
-.main {
-    margin: 0 auto;
-    display: block;
-    height: 100%;
-    margin-top: 60px;
-}
-.mainInner{
-    display: table;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-.mainInner div{
-    display:table-cell;
-    vertical-align: middle;
-    font-size: 3em;
-    font-weight: bold;
-    letter-spacing: 1.25px;
-}
-#sidebarMenu {
-    height: 100%;
-    position: fixed;
-    top:1%;
-    right: 0;
-    width: 300px;
-    margin-top: 60px;
-    transform: translateX(300px);
-    transition: transform 300ms ease-in-out;
-    background-color: rgb(248, 248, 255);
-    /* background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%); */
-}
-.sidebarMenuInner{
-    margin:0;
-    padding:0;
-    border-top: 1px solid rgba(255, 255, 255, 0.10);
-}
-/* .sidebarMenuInner li{
-    list-style: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-}
-.sidebarMenuInner li span{
-    display: block;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.50);
-}
-.sidebarMenuInner li a{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-} */
-input[type="checkbox"]:checked ~ #sidebarMenu {
-    transform: translateX(0);
-}
 
-input[type=checkbox] {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    display: none;
-}
-.sidebarIconToggle {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    cursor: pointer;
-    position: absolute;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    top: 22px;
-    right: 15px;
-    height: 22px;
-    width: 22px;
-}
-.spinner {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background-color:rgb(0, 0, 0,0.7);
-}
-
-#cart-icon{
-    width:40px;
-    height:36px;
-    float:right;
-    margin-top:-20px;
-}
-.horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-    background-color: transparent;
-}
-.diagonal.part-1 {
-    display: none;
-    position: relative;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    float: right;
-    margin-right:260px;
-}
-.diagonal.part-2 {
-    display: none;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: right;
-    margin-top: 3px;
-    margin-right:260px;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    /* opacity: 0; */
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    transform: rotate(135deg);
-    margin-top: 8px;
-    display: block;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    transform: rotate(-135deg);
-    margin-top: -9px;
-    display: block;
-}
 /* #point-sheet{
     position: absolute;
     top:30%;
@@ -825,6 +824,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     z-index:3;
     background-color: green;
 } */
+
+/* Point Sheet */
 
 #point-box{
     display: none;
@@ -895,7 +896,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     border:2px inset black;
 }
 #subgroup,
-#score{
+#score,
+#row1{
     display: flex;
     flex-direction: row;
     width:25%;
@@ -904,12 +906,24 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     text-align:center;
     border:2px inset black;
 }
-#score-points{
+.score-points{
     width:33.33%;
+    /* background-color: lime; */
+
 }
 #sub-pic{
-    width:50%;
+    width:49%;
     /* border:solid 2px aqua; */
+}
+#add_points{
+    width:50%;
+    background-color: lime;
+}
+#submit{
+    width:50%;
+    background-color: azure;
+    font-family: 'Poppins', sans-serif;
+    font-size:14pt;
 }
 #sub-text{
     width:50%;
@@ -918,8 +932,19 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     justify-content: center;
     padding-top:15px;
 }
+#sub-text2{
+    width:50%;
+    /* border:solid 2px aqua; */
+    border-left:none;
+    justify-content: center;
+    line-height: 90px;
+}
 #sub-pic img{
     width:100%;
+    height:100%;
+}
+#sub-pic-math{
+    width:80%;
     height:100%;
 }
 
@@ -933,25 +958,183 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box,
 #box2,
-#box3{
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9,
+#box10,
+#box11,
+#box12,
+#box13,
+#box14,
+#box15,
+#box16,
+#box17,
+#box18,
+#box19,
+#box20,
+#box21,
+#box22,
+#box23,
+#box24,
+#box25,
+#box26,
+#box27,
+#box28,
+#box29,
+#box30,
+#box31,
+#box32,
+#box33,
+#box34,
+#box35,
+#box36,
+#box37,
+#box38,
+#box39,
+#box40,
+#box41,
+#box42,
+#box43,
+#box44,
+#box45,
+#box46,
+#box47,
+#box48,
+#box49,
+#box50,
+#box51,
+#box52,
+#box53,
+#box54
+{
   position: relative;
   top:0%;
   right:0%;
   left:0%;
   /* background-color: lightskyblue; */
-  height:80px;
-  width:80px;
+  height:85px;
+  width:100%;
+  /* border:solid 2px blueviolet; */
 }
+/* #box1{
+    margin-left:10px;
+} */
 #box #_checkbox,
 #box2 #_checkbox2,
-#box3 #_checkbox3
+#box3 #_checkbox3,
+#box4 #_checkbox4,
+#box5 #_checkbox5,
+#box6 #_checkbox6,
+#box7 #_checkbox7,
+#box8 #_checkbox8,
+#box9 #_checkbox9,
+#box10 #_checkbox10,
+#box11 #_checkbox11,
+#box12 #_checkbox12,
+#box13 #_checkbox13,
+#box14 #_checkbox14,
+#box15 #_checkbox15,
+#box16 #_checkbox16,
+#box17 #_checkbox17,
+#box18 #_checkbox18,
+#box19 #_checkbox19,
+#box20 #_checkbox20,
+#box21 #_checkbox21,
+#box22 #_checkbox22,
+#box23 #_checkbox23,
+#box24 #_checkbox24,
+#box25 #_checkbox25,
+#box26 #_checkbox26,
+#box27 #_checkbox27,
+#box28 #_checkbox28,
+#box29 #_checkbox29,
+#box30 #_checkbox30,
+#box31 #_checkbox31,
+#box32 #_checkbox32,
+#box33 #_checkbox33,
+#box34 #_checkbox34,
+#box35 #_checkbox35,
+#box36 #_checkbox36,
+#box37 #_checkbox37,
+#box38 #_checkbox38,
+#box39 #_checkbox39,
+#box40 #_checkbox40,
+#box41 #_checkbox41,
+#box42 #_checkbox42,
+#box43 #_checkbox43,
+#box44 #_checkbox44,
+#box45 #_checkbox45,
+#box46 #_checkbox46,
+#box47 #_checkbox47,
+#box48 #_checkbox48,
+#box49 #_checkbox49,
+#box50 #_checkbox50,
+#box51 #_checkbox51,
+#box52 #_checkbox52,
+#box53 #_checkbox53,
+#box54 #_checkbox54
 {
     display: none;
 }
 
 #box label,
 #box2 label,
-#box3 label
+#box3 label,
+#box4 label,
+#box5 label,
+#box6 label,
+#box7 label,
+#box8 label,
+#box9 label,
+#box10 label,
+#box11 label,
+#box12 label,
+#box13 label,
+#box14 label,
+#box15 label,
+#box16 label,
+#box17 label,
+#box18 label,
+#box19 label,
+#box20 label,
+#box21 label,
+#box22 label,
+#box23 label,
+#box24 label,
+#box25 label,
+#box26 label,
+#box27 label,
+#box28 label,
+#box29 label,
+#box30 label,
+#box31 label,
+#box32 label,
+#box33 label,
+#box34 label,
+#box35 label,
+#box36 label,
+#box37 label,
+#box38 label,
+#box39 label,
+#box40 label,
+#box41 label,
+#box42 label,
+#box43 label,
+#box44 label,
+#box45 label,
+#box46 label,
+#box47 label,
+#box48 label,
+#box49 label,
+#box50 label,
+#box51 label,
+#box52 label,
+#box53 label,
+#box54 label
 {
     position: absolute;
     top: 50%;
@@ -972,7 +1155,58 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box label:before,
 #box2 label:before,
-#box3 label:before
+#box3 label:before,
+#box4 label:before,
+#box5 label:before,
+#box6 label:before,
+#box7 label:before,
+#box8 label:before,
+#box9 label:before,
+#box10 label:before,
+#box11 label:before,
+#box12 label:before,
+#box13 label:before,
+#box14 label:before,
+#box15 label:before,
+#box16 label:before,
+#box17 label:before,
+#box18 label:before,
+#box19 label:before,
+#box20 label:before,
+#box21 label:before,
+#box22 label:before,
+#box23 label:before,
+#box24 label:before,
+#box25 label:before,
+#box26 label:before,
+#box27 label:before,
+#box28 label:before,
+#box29 label:before,
+#box30 label:before,
+#box31 label:before,
+#box31 label:before,
+#box33 label:before,
+#box34 label:before,
+#box35 label:before,
+#box36 label:before,
+#box37 label:before,
+#box38 label:before,
+#box39 label:before,
+#box40 label:before,
+#box41 label:before,
+#box42 label:before,
+#box43 label:before,
+#box44 label:before,
+#box45 label:before,
+#box46 label:before,
+#box47 label:before,
+#box48 label:before,
+#box49 label:before,
+#box50 label:before,
+#box51 label:before,
+#box52 label:before,
+#box53 label:before,
+#box54 label:before
 {
     content: "";
     position: absolute;
@@ -991,7 +1225,58 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box label:hover:before,
 #box2 label:hover:before,
-#box3 label:hover:before
+#box3 label:hover:before,
+#box4 label:hover:before,
+#box5 label:hover:before,
+#box6 label:hover:before,
+#box7 label:hover:before,
+#box8 label:hover:before,
+#box9 label:hover:before,
+#box10 label:hover:before,
+#box11 label:hover:before,
+#box12 label:hover:before,
+#box13 label:hover:before,
+#box14 label:hover:before,
+#box15 label:hover:before,
+#box16 label:hover:before,
+#box17 label:hover:before,
+#box18 label:hover:before,
+#box19 label:hover:before,
+#box20 label:hover:before,
+#box21 label:hover:before,
+#box22 label:hover:before,
+#box23 label:hover:before,
+#box24 label:hover:before,
+#box25 label:hover:before,
+#box26 label:hover:before,
+#box27 label:hover:before,
+#box28 label:hover:before,
+#box29 label:hover:before,
+#box30 label:hover:before,
+#box31 label:hover:before,
+#box32 label:hover:before,
+#box33 label:hover:before,
+#box34 label:hover:before,
+#box35 label:hover:before,
+#box36 label:hover:before,
+#box37 label:hover:before,
+#box38 label:hover:before,
+#box39 label:hover:before,
+#box40 label:hover:before,
+#box41 label:hover:before,
+#box42 label:hover:before,
+#box43 label:hover:before,
+#box44 label:hover:before,
+#box45 label:hover:before,
+#box46 label:hover:before,
+#box47 label:hover:before,
+#box48 label:hover:before,
+#box49 label:hover:before,
+#box50 label:hover:before,
+#box51 label:hover:before,
+#box52 label:hover:before,
+#box53 label:hover:before,
+#box54 label:hover:before
 {
     width: 27.5px;
     height: 27.5px;
@@ -1001,14 +1286,116 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box label:active,
 #box2 label:active,
-#box3 label:active
+#box3 label:active,
+#box4 label:active,
+#box5 label:active,
+#box6 label:active,
+#box7 label:active,
+#box8 label:active,
+#box9 label:active,
+#box10 label:active,
+#box11 label:active,
+#box12 label:active,
+#box13 label:active,
+#box14 label:active,
+#box15 label:active,
+#box16 label:active,
+#box17 label:active,
+#box18 label:active,
+#box19 label:active,
+#box20 label:active,
+#box21 label:active,
+#box22 label:active,
+#box23 label:active,
+#box24 label:active,
+#box25 label:active,
+#box26 label:active,
+#box27 label:active,
+#box28 label:active,
+#box29 label:active,
+#box30 label:active,
+#box31 label:active,
+#box32 label:active,
+#box33 label:active,
+#box34 label:active,
+#box35 label:active,
+#box36 label:active,
+#box37 label:active,
+#box38 label:active,
+#box39 label:active,
+#box40 label:active,
+#box41 label:active,
+#box42 label:active,
+#box43 label:active,
+#box44 label:active,
+#box45 label:active,
+#box46 label:active,
+#box47 label:active,
+#box48 label:active,
+#box49 label:active,
+#box50 label:active,
+#box51 label:active,
+#box52 label:active,
+#box53 label:active,
+#box54 label:active
 {
     transform: translateY(-50%) scale(0.9);
 }
 
 #box #tick_mark,
 #box2 #tick_mark,
-#box3 #tick_mark
+#box3 #tick_mark,
+#box4 #tick_mark,
+#box5 #tick_mark,
+#box6 #tick_mark,
+#box7 #tick_mark,
+#box8 #tick_mark,
+#box9 #tick_mark,
+#box10 #tick_mark,
+#box11 #tick_mark,
+#box12 #tick_mark,
+#box13 #tick_mark,
+#box14 #tick_mark,
+#box15 #tick_mark,
+#box16 #tick_mark,
+#box17 #tick_mark,
+#box18 #tick_mark,
+#box19 #tick_mark,
+#box20 #tick_mark,
+#box21 #tick_mark,
+#box22 #tick_mark,
+#box23 #tick_mark,
+#box24 #tick_mark,
+#box25 #tick_mark,
+#box26 #tick_mark,
+#box27 #tick_mark,
+#box28 #tick_mark,
+#box29 #tick_mark,
+#box30 #tick_mark,
+#box31 #tick_mark,
+#box32#tick_mark,
+#box33 #tick_mark,
+#box34 #tick_mark,
+#box35 #tick_mark,
+#box36 #tick_mark,
+#box37 #tick_mark,
+#box38 #tick_mark,
+#box39 #tick_mark,
+#box40 #tick_mark,
+#box41 #tick_mark,
+#box42 #tick_mark,
+#box43 #tick_mark,
+#box44 #tick_mark,
+#box45 #tick_mark,
+#box46 #tick_mark,
+#box47 #tick_mark,
+#box48 #tick_mark,
+#box49 #tick_mark,
+#box50 #tick_mark,
+#box51 #tick_mark,
+#box52 #tick_mark,
+#box53 #tick_mark,
+#box54 #tick_mark
 {
     position: absolute;
     top: -1px;
@@ -1023,7 +1410,58 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box #tick_mark:before, #tick_mark:after,
 #box2 #tick_mark:before, #tick_mark:after,
-#box3 #tick_mark:before, #tick_mark:after
+#box3 #tick_mark:before, #tick_mark:after,
+#box4 #tick_mark:before, #tick_mark:after,
+#box5 #tick_mark:before, #tick_mark:after,
+#box6 #tick_mark:before, #tick_mark:after,
+#box7 #tick_mark:before, #tick_mark:after,
+#box8 #tick_mark:before, #tick_mark:after,
+#box9 #tick_mark:before, #tick_mark:after,
+#box10 #tick_mark:before, #tick_mark:after,
+#box11 #tick_mark:before, #tick_mark:after,
+#box12 #tick_mark:before, #tick_mark:after,
+#box13 #tick_mark:before, #tick_mark:after,
+#box14 #tick_mark:before, #tick_mark:after,
+#box15 #tick_mark:before, #tick_mark:after,
+#box16 #tick_mark:before, #tick_mark:after,
+#box17 #tick_mark:before, #tick_mark:after,
+#box18 #tick_mark:before, #tick_mark:after,
+#box19 #tick_mark:before, #tick_mark:after,
+#box20 #tick_mark:before, #tick_mark:after,
+#box21 #tick_mark:before, #tick_mark:after,
+#box22 #tick_mark:before, #tick_mark:after,
+#box23 #tick_mark:before, #tick_mark:after,
+#box24 #tick_mark:before, #tick_mark:after,
+#box25 #tick_mark:before, #tick_mark:after,
+#box26 #tick_mark:before, #tick_mark:after,
+#box27 #tick_mark:before, #tick_mark:after,
+#box28 #tick_mark:before, #tick_mark:after,
+#box29 #tick_mark:before, #tick_mark:after,
+#box30 #tick_mark:before, #tick_mark:after,
+#box31 #tick_mark:before, #tick_mark:after,
+#box32 #tick_mark:before, #tick_mark:after,
+#box33 #tick_mark:before, #tick_mark:after,
+#box34 #tick_mark:before, #tick_mark:after,
+#box35 #tick_mark:before, #tick_mark:after,
+#box36 #tick_mark:before, #tick_mark:after,
+#box37 #tick_mark:before, #tick_mark:after,
+#box38 #tick_mark:before, #tick_mark:after,
+#box39 #tick_mark:before, #tick_mark:after,
+#box40 #tick_mark:before, #tick_mark:after,
+#box41 #tick_mark:before, #tick_mark:after,
+#box42 #tick_mark:before, #tick_mark:after,
+#box43 #tick_mark:before, #tick_mark:after,
+#box44 #tick_mark:before, #tick_mark:after,
+#box45 #tick_mark:before, #tick_mark:after,
+#box46 #tick_mark:before, #tick_mark:after,
+#box47 #tick_mark:before, #tick_mark:after,
+#box48 #tick_mark:before, #tick_mark:after,
+#box49 #tick_mark:before, #tick_mark:after,
+#box50 #tick_mark:before, #tick_mark:after,
+#box51 #tick_mark:before, #tick_mark:after,
+#box52 #tick_mark:before, #tick_mark:after,
+#box53 #tick_mark:before, #tick_mark:after,
+#box54 #tick_mark:before, #tick_mark:after
 {
     content: "";
     position: absolute;
@@ -1035,7 +1473,58 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box #tick_mark:before,
 #box2 #tick_mark:before,
-#box3 #tick_mark:before
+#box3 #tick_mark:before,
+#box4 #tick_mark:before,
+#box5 #tick_mark:before,
+#box6 #tick_mark:before,
+#box7 #tick_mark:before,
+#box8 #tick_mark:before,
+#box9 #tick_mark:before,
+#box10 #tick_mark:before,
+#box11 #tick_mark:before,
+#box12 #tick_mark:before,
+#box13 #tick_mark:before,
+#box14 #tick_mark:before,
+#box15 #tick_mark:before,
+#box16 #tick_mark:before,
+#box17 #tick_mark:before,
+#box18 #tick_mark:before,
+#box19 #tick_mark:before,
+#box20 #tick_mark:before,
+#box21 #tick_mark:before,
+#box22 #tick_mark:before,
+#box23 #tick_mark:before,
+#box24 #tick_mark:before,
+#box25 #tick_mark:before,
+#box26 #tick_mark:before,
+#box27 #tick_mark:before,
+#box28 #tick_mark:before,
+#box29 #tick_mark:before,
+#box30 #tick_mark:before,
+#box31 #tick_mark:before,
+#box32 #tick_mark:before,
+#box33 #tick_mark:before,
+#box34 #tick_mark:before,
+#box35 #tick_mark:before,
+#box36 #tick_mark:before,
+#box37 #tick_mark:before,
+#box38 #tick_mark:before,
+#box39 #tick_mark:before,
+#box40 #tick_mark:before,
+#box41 #tick_mark:before,
+#box42 #tick_mark:before,
+#box43 #tick_mark:before,
+#box44 #tick_mark:before,
+#box45 #tick_mark:before,
+#box46 #tick_mark:before,
+#box47 #tick_mark:before,
+#box48 #tick_mark:before,
+#box49 #tick_mark:before,
+#box50 #tick_mark:before,
+#box51 #tick_mark:before,
+#box52 #tick_mark:before,
+#box53 #tick_mark:before,
+#box54 #tick_mark:before
 {
     left: 0%;
     bottom: 0%;
@@ -1047,7 +1536,58 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box #tick_mark:after,
 #box2 #tick_mark:after,
-#box3 #tick_mark:after
+#box3 #tick_mark:after,
+#box4 #tick_mark:after,
+#box5 #tick_mark:after,
+#box6 #tick_mark:after,
+#box7 #tick_mark:after,
+#box8 #tick_mark:after,
+#box9 #tick_mark:after,
+#box10 #tick_mark:after,
+#box11 #tick_mark:after,
+#box12 #tick_mark:after,
+#box13 #tick_mark:after,
+#box14 #tick_mark:after,
+#box15 #tick_mark:after,
+#box16 #tick_mark:after,
+#box17 #tick_mark:after,
+#box18 #tick_mark:after,
+#box19 #tick_mark:after,
+#box20 #tick_mark:after,
+#box21 #tick_mark:after,
+#box22 #tick_mark:after,
+#box23 #tick_mark:after,
+#box24 #tick_mark:after,
+#box25 #tick_mark:after,
+#box26 #tick_mark:after,
+#box27 #tick_mark:after,
+#box28 #tick_mark:after,
+#box29 #tick_mark:after,
+#box30 #tick_mark:after,
+#box31 #tick_mark:after,
+#box32 #tick_mark:after,
+#box33 #tick_mark:after,
+#box34 #tick_mark:after,
+#box35 #tick_mark:after,
+#box36 #tick_mark:after,
+#box37 #tick_mark:after,
+#box38 #tick_mark:after,
+#box39 #tick_mark:after,
+#box40 #tick_mark:after,
+#box41 #tick_mark:after,
+#box42 #tick_mark:after,
+#box43 #tick_mark:after,
+#box44 #tick_mark:after,
+#box45 #tick_mark:after,
+#box46 #tick_mark:after,
+#box47 #tick_mark:after,
+#box48 #tick_mark:after,
+#box49 #tick_mark:after,
+#box50 #tick_mark:after,
+#box51 #tick_mark:after,
+#box52 #tick_mark:after,
+#box53 #tick_mark:after,
+#box54 #tick_mark:after
 {
     left: 0%;
     bottom: 0%;
@@ -1059,7 +1599,58 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box #_checkbox:checked + label,
 #box2 #_checkbox2:checked + label,
-#box3 #_checkbox3:checked + label
+#box3 #_checkbox3:checked + label,
+#box4 #_checkbox4:checked + label,
+#box5 #_checkbox5:checked + label,
+#box6 #_checkbox6:checked + label,
+#box7 #_checkbox7:checked + label,
+#box8 #_checkbox8:checked + label,
+#box9 #_checkbox9:checked + label,
+#box10 #_checkbox10:checked + label,
+#box11 #_checkbox11:checked + label,
+#box12 #_checkbox12:checked + label,
+#box13 #_checkbox13:checked + label,
+#box14 #_checkbox14:checked + label,
+#box15 #_checkbox15:checked + label,
+#box16 #_checkbox16:checked + label,
+#box17 #_checkbox17:checked + label,
+#box18 #_checkbox18:checked + label,
+#box19 #_checkbox19:checked + label,
+#box20 #_checkbox20:checked + label,
+#box21 #_checkbox21:checked + label,
+#box22 #_checkbox22:checked + label,
+#box23 #_checkbox23:checked + label,
+#box24 #_checkbox24:checked + label,
+#box25 #_checkbox25:checked + label,
+#box26 #_checkbox26:checked + label,
+#box27 #_checkbox27:checked + label,
+#box28 #_checkbox28:checked + label,
+#box29 #_checkbox29:checked + label,
+#box30 #_checkbox30:checked + label,
+#box31 #_checkbox31:checked + label,
+#box32 #_checkbox32:checked + label,
+#box33 #_checkbox33:checked + label,
+#box34 #_checkbox34:checked + label,
+#box35 #_checkbox35:checked + label,
+#box36 #_checkbox36:checked + label,
+#box37 #_checkbox37:checked + label,
+#box38 #_checkbox38:checked + label,
+#box39 #_checkbox39:checked + label,
+#box40 #_checkbox40:checked + label,
+#box41 #_checkbox41:checked + label,
+#box42 #_checkbox42:checked + label,
+#box43 #_checkbox43:checked + label,
+#box44 #_checkbox44:checked + label,
+#box45 #_checkbox45:checked + label,
+#box46 #_checkbox46:checked + label,
+#box47 #_checkbox47:checked + label,
+#box48 #_checkbox48:checked + label,
+#box49 #_checkbox49:checked + label,
+#box50 #_checkbox50:checked + label,
+#box51 #_checkbox51:checked + label,
+#box52 #_checkbox52:checked + label,
+#box53 #_checkbox53:checked + label,
+#box54 #_checkbox54:checked + label
 {
     background-color: #07d410;
     box-shadow: 0 7px 10px #92ff97;
@@ -1067,7 +1658,58 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box #_checkbox:checked + label:before,
 #box2 #_checkbox2:checked + label:before,
-#box3 #_checkbox3:checked + label:before
+#box3 #_checkbox3:checked + label:before,
+#box4 #_checkbox4:checked + label:before,
+#box5 #_checkbox5:checked + label:before,
+#box6 #_checkbox6:checked + label:before,
+#box7 #_checkbox7:checked + label:before,
+#box8 #_checkbox8:checked + label:before,
+#box9 #_checkbox9:checked + label:before,
+#box10 #_checkbox10:checked + label:before,
+#box11 #_checkbox11:checked + label:before,
+#box12 #_checkbox12:checked + label:before,
+#box13 #_checkbox13:checked + label:before,
+#box14 #_checkbox14:checked + label:before,
+#box15 #_checkbox15:checked + label:before,
+#box16 #_checkbox16:checked + label:before,
+#box17 #_checkbox17:checked + label:before,
+#box18 #_checkbox18:checked + label:before,
+#box19 #_checkbox19:checked + label:before,
+#box20 #_checkbox20:checked + label:before,
+#box21 #_checkbox21:checked + label:before,
+#box22 #_checkbox22:checked + label:before,
+#box23 #_checkbox23:checked + label:before,
+#box24 #_checkbox24:checked + label:before,
+#box25 #_checkbox25:checked + label:before,
+#box26 #_checkbox26:checked + label:before,
+#box27 #_checkbox27:checked + label:before,
+#box28 #_checkbox28:checked + label:before,
+#box29 #_checkbox29:checked + label:before,
+#box30 #_checkbox30:checked + label:before,
+#box31 #_checkbox31:checked + label:before,
+#box32 #_checkbox32:checked + label:before,
+#box33 #_checkbox33:checked + label:before,
+#box34 #_checkbox34:checked + label:before,
+#box35 #_checkbox35:checked + label:before,
+#box36 #_checkbox36:checked + label:before,
+#box37 #_checkbox37:checked + label:before,
+#box38 #_checkbox38:checked + label:before,
+#box39 #_checkbox39:checked + label:before,
+#box40 #_checkbox40:checked + label:before,
+#box41 #_checkbox41:checked + label:before,
+#box42 #_checkbox42:checked + label:before,
+#box43 #_checkbox43:checked + label:before,
+#box44 #_checkbox44:checked + label:before,
+#box45 #_checkbox45:checked + label:before,
+#box46 #_checkbox46:checked + label:before,
+#box47 #_checkbox47:checked + label:before,
+#box48 #_checkbox48:checked + label:before,
+#box49 #_checkbox49:checked + label:before,
+#box50 #_checkbox50:checked + label:before,
+#box51 #_checkbox51:checked + label:before,
+#box52 #_checkbox52:checked + label:before,
+#box53 #_checkbox53:checked + label:before,
+#box54 #_checkbox54:checked + label:before
 {
     width: 0;
     height: 0;
@@ -1075,12 +1717,118 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 #box #_checkbox:checked + label #tick_mark:before, #_checkbox:checked + label #tick_mark:after,
 #box2 #_checkbox2:checked + label #tick_mark:before, #_checkbox2:checked + label #tick_mark:after,
-#box3 #_checkbox3:checked + label #tick_mark:before, #_checkbox3:checked + label #tick_mark:after
+#box3 #_checkbox3:checked + label #tick_mark:before, #_checkbox3:checked + label #tick_mark:after,
+#box4 #_checkbox4:checked + label #tick_mark:before, #_checkbox4:checked + label #tick_mark:after,
+#box5 #_checkbox5:checked + label #tick_mark:before, #_checkbox5:checked + label #tick_mark:after,
+#box6 #_checkbox6:checked + label #tick_mark:before, #_checkbox6:checked + label #tick_mark:after,
+#box7 #_checkbox7:checked + label #tick_mark:before, #_checkbox7:checked + label #tick_mark:after,
+#box8 #_checkbox8:checked + label #tick_mark:before, #_checkbox8:checked + label #tick_mark:after,
+#box9 #_checkbox9:checked + label #tick_mark:before, #_checkbox9:checked + label #tick_mark:after,
+#box10 #_checkbox10:checked + label #tick_mark:before, #_checkbox10:checked + label #tick_mark:after,
+#box11 #_checkbox11:checked + label #tick_mark:before, #_checkbox11:checked + label #tick_mark:after,
+#box12 #_checkbox12:checked + label #tick_mark:before, #_checkbox12:checked + label #tick_mark:after,
+#box13 #_checkbox13:checked + label #tick_mark:before, #_checkbox13:checked + label #tick_mark:after,
+#box14 #_checkbox14:checked + label #tick_mark:before, #_checkbox14:checked + label #tick_mark:after,
+#box15 #_checkbox15:checked + label #tick_mark:before, #_checkbox15:checked + label #tick_mark:after,
+#box16 #_checkbox16:checked + label #tick_mark:before, #_checkbox16:checked + label #tick_mark:after,
+#box17 #_checkbox17:checked + label #tick_mark:before, #_checkbox17:checked + label #tick_mark:after,
+#box18 #_checkbox18:checked + label #tick_mark:before, #_checkbox18:checked + label #tick_mark:after,
+#box19 #_checkbox19:checked + label #tick_mark:before, #_checkbox19:checked + label #tick_mark:after,
+#box20 #_checkbox20:checked + label #tick_mark:before, #_checkbox20:checked + label #tick_mark:after,
+#box21 #_checkbox21:checked + label #tick_mark:before, #_checkbox21:checked + label #tick_mark:after,
+#box22 #_checkbox22:checked + label #tick_mark:before, #_checkbox22:checked + label #tick_mark:after,
+#box23 #_checkbox23:checked + label #tick_mark:before, #_checkbox23:checked + label #tick_mark:after,
+#box24 #_checkbox24:checked + label #tick_mark:before, #_checkbox24:checked + label #tick_mark:after,
+#box25 #_checkbox25:checked + label #tick_mark:before, #_checkbox25:checked + label #tick_mark:after,
+#box26 #_checkbox26:checked + label #tick_mark:before, #_checkbox26:checked + label #tick_mark:after,
+#box27 #_checkbox27:checked + label #tick_mark:before, #_checkbox27:checked + label #tick_mark:after,
+#box28 #_checkbox28:checked + label #tick_mark:before, #_checkbox28:checked + label #tick_mark:after,
+#box29 #_checkbox29:checked + label #tick_mark:before, #_checkbox29:checked + label #tick_mark:after,
+#box30 #_checkbox30:checked + label #tick_mark:before, #_checkbox30:checked + label #tick_mark:after,
+#box31 #_checkbox31:checked + label #tick_mark:before, #_checkbox31:checked + label #tick_mark:after,
+#box32 #_checkbox32:checked + label #tick_mark:before, #_checkbox32:checked + label #tick_mark:after,
+#box33 #_checkbox33:checked + label #tick_mark:before, #_checkbox33:checked + label #tick_mark:after,
+#box34 #_checkbox34:checked + label #tick_mark:before, #_checkbox34:checked + label #tick_mark:after,
+#box35 #_checkbox35:checked + label #tick_mark:before, #_checkbox35:checked + label #tick_mark:after,
+#box36 #_checkbox36:checked + label #tick_mark:before, #_checkbox36:checked + label #tick_mark:after,
+#box37 #_checkbox37:checked + label #tick_mark:before, #_checkbox37:checked + label #tick_mark:after,
+#box38 #_checkbox38:checked + label #tick_mark:before, #_checkbox38:checked + label #tick_mark:after,
+#box39 #_checkbox39:checked + label #tick_mark:before, #_checkbox39:checked + label #tick_mark:after,
+#box40 #_checkbox40:checked + label #tick_mark:before, #_checkbox40:checked + label #tick_mark:after,
+#box41 #_checkbox41:checked + label #tick_mark:before, #_checkbox41:checked + label #tick_mark:after,
+#box42 #_checkbox42:checked + label #tick_mark:before, #_checkbox42:checked + label #tick_mark:after,
+#box43 #_checkbox43:checked + label #tick_mark:before, #_checkbox43:checked + label #tick_mark:after,
+#box44 #_checkbox44:checked + label #tick_mark:before, #_checkbox44:checked + label #tick_mark:after,
+#box45 #_checkbox45:checked + label #tick_mark:before, #_checkbox45:checked + label #tick_mark:after,
+#box46 #_checkbox46:checked + label #tick_mark:before, #_checkbox46:checked + label #tick_mark:after,
+#box47 #_checkbox47:checked + label #tick_mark:before, #_checkbox47:checked + label #tick_mark:after,
+#box48 #_checkbox48:checked + label #tick_mark:before, #_checkbox48:checked + label #tick_mark:after,
+#box49 #_checkbox49:checked + label #tick_mark:before, #_checkbox49:checked + label #tick_mark:after,
+#box50 #_checkbox50:checked + label #tick_mark:before, #_checkbox50:checked + label #tick_mark:after,
+#box51 #_checkbox51:checked + label #tick_mark:before, #_checkbox51:checked + label #tick_mark:after,
+#box52 #_checkbox52:checked + label #tick_mark:before, #_checkbox52:checked + label #tick_mark:after,
+#box53 #_checkbox53:checked + label #tick_mark:before, #_checkbox53:checked + label #tick_mark:after,
+#box54 #_checkbox54:checked + label #tick_mark:before, #_checkbox54:checked + label #tick_mark:after
 {
     transform: translate(0);
     opacity: 1;
 }
-#text{
+#text1,
+#text2,
+#text3,
+#text4,
+#text5,
+#text6,
+#text7,
+#text8,
+#text9,
+#text10,
+#text11,
+#text12,
+#text13,
+#text14,
+#text15,
+#text16,
+#text17,
+#text18,
+#text19,
+#text20,
+#text21,
+#text22,
+#text23,
+#text24,
+#text25,
+#text26,
+#text27,
+#text28,
+#text29,
+#text30,
+#text31,
+#text32,
+#text33,
+#text34,
+#text35,
+#text36,
+#text37,
+#text38,
+#text39,
+#text40,
+#text41,
+#text42,
+#text43,
+#text44,
+#text45,
+#text46,
+#text47,
+#text48,
+#text49,
+#text50,
+#text51,
+#text52,
+#text53,
+#text54
+
+{
   font-size:18pt;
   text-align: center;
   line-height: 50px;
